@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="te">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Surendra Mobiles | Allagadda</title>
-    .home-offer-img{
-    width:100%;
-    max-width:500px;
-    border-radius:20px;
-    margin-bottom:20px;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-}
 
 <style>
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, sans-serif;
+    font-family:Arial,sans-serif;
 }
 
 body{
@@ -28,6 +22,7 @@ body{
 }
 
 /* HEADER */
+
 header{
     background:#111827;
     color:white;
@@ -57,8 +52,9 @@ nav a{
 }
 
 /* HERO */
+
 .hero{
-    min-height:430px;
+    min-height:500px;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -68,18 +64,17 @@ nav a{
     color:white;
 }
 
-.hero h1{
-    font-size:48px;
-    margin-bottom:15px;
+.hero-content{
+    width:100%;
+    max-width:600px;
 }
 
-.hero h1 span{
-    color:#00e5ff;
-}
-
-.hero p{
-    font-size:19px;
-    margin-bottom:25px;
+.home-offer-img{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+    margin:0 auto 20px;
+    display:block;
 }
 
 .offer{
@@ -89,6 +84,20 @@ nav a{
     border-radius:30px;
     font-size:20px;
     font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#00e5ff;
+}
+
+.hero p{
+    font-size:19px;
     margin-bottom:25px;
 }
 
@@ -103,6 +112,7 @@ nav a{
 }
 
 /* SECTIONS */
+
 section{
     padding:55px 6%;
 }
@@ -114,6 +124,7 @@ section{
 }
 
 /* BRANDS */
+
 .brands{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
@@ -139,11 +150,68 @@ section{
     color:white;
 }
 
+/* OPPO SECTION */
+
+.oppo-section{
+    background:#fff;
+}
+
+.oppo-box{
+    max-width:650px;
+    margin:auto;
+    background:#f8f9ff;
+    padding:25px;
+    border-radius:22px;
+    text-align:center;
+    box-shadow:0 5px 25px rgba(0,0,0,.10);
+}
+
+.oppo-img{
+    width:100%;
+    max-width:500px;
+    border-radius:18px;
+    display:block;
+    margin:0 auto 20px;
+}
+
+.oppo-box h3{
+    font-size:28px;
+    margin-bottom:12px;
+}
+
+.oppo-offer-text{
+    font-size:22px;
+    font-weight:bold;
+    color:#e60023;
+    margin-bottom:12px;
+}
+
+.oppo-details{
+    font-size:17px;
+    color:#555;
+    margin-bottom:20px;
+}
+
+/* INSTAGRAM BUTTON */
+
+.instagram-btn{
+    display:inline-block;
+    background:#E1306C;
+    color:white;
+    padding:13px 24px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
 /* OFFERS */
+
 .offer-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
+    max-width:1100px;
+    margin:auto;
 }
 
 .offer-card{
@@ -163,7 +231,38 @@ section{
     color:#666;
 }
 
+/* OPPO OFFER CARD */
+
+.oppo-offer-card{
+    grid-column:1 / -1;
+}
+
+.offers-oppo-img{
+    width:100%;
+    max-width:450px;
+    border-radius:18px;
+    display:block;
+    margin:0 auto 18px;
+}
+
+.oppo-offer-card h3{
+    font-size:26px;
+}
+
+.oppo-offer-card .free-cycle{
+    color:#e60023;
+    font-size:20px;
+    font-weight:bold;
+    margin:10px 0;
+}
+
+.oppo-offer-card .video-text{
+    color:#555;
+    margin-bottom:18px;
+}
+
 /* CONTACT */
+
 .contact{
     background:#111827;
     color:white;
@@ -187,6 +286,7 @@ section{
 }
 
 /* FOOTER */
+
 footer{
     background:#080c14;
     color:#aaa;
@@ -196,7 +296,9 @@ footer{
 }
 
 /* MOBILE */
+
 @media(max-width:650px){
+
     header{
         flex-direction:column;
         gap:12px;
@@ -208,62 +310,103 @@ footer{
     }
 
     .hero h1{
-        font-size:36px;
+        font-size:34px;
     }
 
     .hero p{
         font-size:16px;
     }
 
+    .offer{
+        font-size:17px;
+    }
+
     section{
         padding:40px 5%;
     }
+
+    .oppo-box{
+        padding:18px;
+    }
+
+    .oppo-box h3{
+        font-size:24px;
+    }
+
+    .oppo-offer-text{
+        font-size:19px;
+    }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
+
 <header>
-    <div class="logo">SUR​​ENDRA <span>MOBILES</span></div>
+
+    <div class="logo">
+        SURENDRA <span>MOBILES</span>
+    </div>
 
     <nav>
         <a href="#home">Home</a>
         <a href="#brands">Brands</a>
+        <a href="#oppo">OPPO</a>
         <a href="#offers">Offers</a>
         <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
-<!-- HERO -->
-<section class="hero" id="home">
-    <div>
 
-        <img src="oppo-a6s-offer.jpg"
-             alt="OPPO A6s Offer"
-             class="home-offer-img">
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <img
+            src="oppo-a6s-offer.jpg"
+            alt="OPPO A6s Free Cycle Offer"
+            class="home-offer-img"
+        >
 
         <div class="offer">
             🎁 మొబైల్ కొంటే సైకిల్ ఉచితం 🚲
         </div>
 
-        <h1>OPPO A6s <span>5G</span></h1>
+        <h1>
+            OPPO A6s
+        </h1>
 
-        <p>🔥 Special Offer at Surendra Mobiles</p>
+        <p>
+            🔥 Special Offer at Surendra Mobiles
+        </p>
 
-        <a class="btn"
-           href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MWYzMzVjdGwxdjR2aQ=="
-           target="_blank">
-           📸 Instagram Reel చూడండి
+        <a
+            class="btn"
+            href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
+            target="_blank"
+        >
+            🎥 వీడియో చూడండి
         </a>
 
     </div>
+
 </section>
 
+
 <!-- BRANDS -->
+
 <section id="brands">
 
-    <h2 class="title">📱 Mobile Brands</h2>
+    <h2 class="title">
+        📱 Mobile Brands
+    </h2>
 
     <div class="brands">
 
@@ -283,59 +426,199 @@ footer{
 
 </section>
 
-<!-- OFFERS -->
-<section id="offers">
 
-    <h2 class="title">🔥 Special Offers</h2>
+<!-- OPPO SECTION -->
 
-    <div class="offer-grid">
+<section class="oppo-section" id="oppo">
 
-        <div class="offer-card">
-            <h3>📱 Exchange Offer</h3>
-            <p>Bring your old mobile and get exciting discounts.</p>
-        </div>
+    <h2 class="title">
+        📱 OPPO Special Offer
+    </h2>
 
-        <div class="offer-card">
-            <h3>💳 Credit Card Offer</h3>
-            <p>Enjoy special discounts with eligible credit cards.</p>
-        </div>
+    <div class="oppo-box">
 
-        <div class="offer-card">
-            <h3>🎁 Free Gifts</h3>
-            <p>Exciting gifts available on selected mobiles.</p>
-        </div>
+        <img
+            src="oppo-a6s-offer.jpg"
+            alt="OPPO A6s Offer"
+            class="oppo-img"
+        >
 
-        <div class="offer-card">
-            <h3>💰 Easy Finance</h3>
-            <p>Bajaj, TVS & HTB Finance available.</p>
-        </div>
+        <h3>
+            OPPO A6s
+        </h3>
+
+        <p class="oppo-offer-text">
+            🎁 మొబైల్ కొంటే సైకిల్ ఉచితం 🚲
+        </p>
+
+        <p class="oppo-details">
+            మరిన్ని వివరాలు కోసం వీడియో చూడండి
+        </p>
+
+        <a
+            class="instagram-btn"
+            href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
+            target="_blank"
+        >
+            🎥 Instagram Reel చూడండి
+        </a>
 
     </div>
 
 </section>
 
+
+<!-- OFFERS -->
+
+<section id="offers">
+
+    <h2 class="title">
+        🔥 Special Offers
+    </h2>
+
+    <div class="offer-grid">
+
+
+        <!-- OPPO OFFER -->
+
+        <div class="offer-card oppo-offer-card">
+
+            <img
+                src="oppo-a6s-offer.jpg"
+                alt="OPPO A6s Free Cycle Offer"
+                class="offers-oppo-img"
+            >
+
+            <h3>
+                📱 OPPO A6s
+            </h3>
+
+            <p class="free-cycle">
+                🎁 మొబైల్ కొంటే సైకిల్ ఉచితం 🚲
+            </p>
+
+            <p class="video-text">
+                మరిన్ని వివరాలు కోసం వీడియో చూడండి
+            </p>
+
+            <a
+                class="instagram-btn"
+                href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
+                target="_blank"
+            >
+                🎥 Instagram Reel చూడండి
+            </a>
+
+        </div>
+
+
+        <!-- EXCHANGE -->
+
+        <div class="offer-card">
+
+            <h3>
+                📱 Exchange Offer
+            </h3>
+
+            <p>
+                Bring your old mobile and get exciting discounts.
+            </p>
+
+        </div>
+
+
+        <!-- CREDIT CARD -->
+
+        <div class="offer-card">
+
+            <h3>
+                💳 Credit Card Offer
+            </h3>
+
+            <p>
+                Enjoy special discounts with eligible credit cards.
+            </p>
+
+        </div>
+
+
+        <!-- FREE GIFTS -->
+
+        <div class="offer-card">
+
+            <h3>
+                🎁 Free Gifts
+            </h3>
+
+            <p>
+                Exciting gifts available on selected mobiles.
+            </p>
+
+        </div>
+
+
+        <!-- FINANCE -->
+
+        <div class="offer-card">
+
+            <h3>
+                💰 Easy Finance
+            </h3>
+
+            <p>
+                Bajaj, TVS & HTB Finance available.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
 <!-- CONTACT -->
+
 <section class="contact" id="contact">
 
-    <h2 class="title">📍 Visit Our Store</h2>
+    <h2 class="title">
+        📍 Visit Our Store
+    </h2>
 
-    <p><strong>Surendra Mobiles & Electronics</strong></p>
+    <p>
+        <strong>
+            Surendra Mobiles & Electronics
+        </strong>
+    </p>
 
-    <p>Phone Road Circle, Allagadda</p>
+    <p>
+        Phone Road Circle, Allagadda
+    </p>
 
-    <p>📞 9014060606</p>
+    <p>
+        📞 9014060606
+    </p>
 
-    <a class="whatsapp"
-       href="https://wa.me/919014060606"
-       target="_blank">
-       💬 WhatsApp Us
+    <a
+        class="whatsapp"
+        href="https://wa.me/919014060606"
+        target="_blank"
+    >
+        💬 WhatsApp Us
     </a>
 
 </section>
 
+
+<!-- FOOTER -->
+
 <footer>
-    © 2026 Surendra Mobiles & Electronics | All Rights Reserved
+
+    © 2026 Surendra Mobiles & Electronics |
+    All Rights Reserved
+
 </footer>
+
 
 </body>
 </html>
