@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+yy<!DOCTYPE html>
 <html lang="te">
 
 <head>
@@ -652,6 +652,44 @@ footer{
          style="width:250px; max-width:90%; margin:20px auto; display:block;">
 
     <p><b>Payment చేసిన తర్వాత WhatsAppలో Order details పంపండి.</b></p>
+        <form onsubmit="sendOrder(event)" style="max-width:450px; margin:20px auto;">
+
+    <input id="customerName"
+           type="text"
+           placeholder="మీ పేరు"
+           required
+           style="width:100%; padding:12px; margin:8px 0;">
+
+    <input id="customerPhone"
+           type="tel"
+           placeholder="మీ మొబైల్ నంబర్"
+           required
+           style="width:100%; padding:12px; margin:8px 0;">
+
+    <input id="mobileModel"
+           type="text"
+           placeholder="ఏ Mobile కావాలి?"
+           required
+           style="width:100%; padding:12px; margin:8px 0;">
+
+    <textarea id="address"
+              placeholder="మీ Address"
+              required
+              style="width:100%; padding:12px; margin:8px 0;"></textarea>
+
+    <input id="paymentAmount"
+           type="number"
+           placeholder="Payment చేసిన Amount ₹"
+           required
+           style="width:100%; padding:12px; margin:8px 0;">
+
+    <button type="submit"
+            style="width:100%; padding:14px; background:#25D366; color:white; border:0; border-radius:8px; font-size:16px;">
+        💬 Payment & Order Details పంపండి
+    </button>
+
+        </form>
+        
 
     <a href="https://wa.me/919014060606"
        style="display:inline-block; padding:12px 20px; background:#25D366; color:white; text-decoration:none; border-radius:8px;">
