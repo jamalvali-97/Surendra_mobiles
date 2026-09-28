@@ -696,6 +696,34 @@ footer{
         💬 WhatsApp Order
     </a>
     </section>
+    <script>
+function sendOrder(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("customerName").value;
+    const phone = document.getElementById("customerPhone").value;
+    const model = document.getElementById("mobileModel").value;
+    const address = document.getElementById("address").value;
+    const amount = document.getElementById("paymentAmount").value;
+
+    const message =
+`🛒 NEW ORDER - SURENDRA MOBILES
+
+👤 Name: ${name}
+📞 Customer Phone: ${phone}
+📱 Mobile: ${model}
+📍 Address: ${address}
+💰 Payment Amount: ₹${amount}
+
+✅ UPI Payment చేసినట్లు customer తెలిపాడు.`;
+
+    const whatsappURL =
+        "https://wa.me/919014060606?text=" +
+        encodeURIComponent(message);
+
+    window.open(whatsappURL, "_blank");
+}
+    </script>
 
 </body>
 </html>
