@@ -1,4 +1,4 @@
-yy<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="te">
 
 <head>
@@ -14,6 +14,10 @@ yy<!DOCTYPE html>
     padding:0;
     box-sizing:border-box;
     font-family:Arial,sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
@@ -146,14 +150,14 @@ section{
     box-shadow:0 5px 20px rgba(0,0,0,.08);
 }
 
-/* OPPO SECTION */
+/* OPPO */
 
 .oppo-section{
     background:#ffffff;
 }
 
 .oppo-box{
-    max-width:800px;
+    max-width:850px;
     margin:auto;
     background:#f8f9ff;
     padding:25px;
@@ -194,6 +198,25 @@ section{
     margin-bottom:20px;
 }
 
+/* PRICE */
+
+.price-box{
+    margin:20px auto;
+    padding:15px;
+    max-width:350px;
+    background:#f5f5f5;
+    border-radius:10px;
+    font-size:18px;
+}
+
+.price-box p{
+    margin:10px 0;
+}
+
+.price-box strong{
+    font-size:20px;
+}
+
 /* INSTAGRAM */
 
 .instagram-btn{
@@ -204,6 +227,24 @@ section{
     border-radius:30px;
     text-decoration:none;
     font-weight:bold;
+}
+
+/* BUY NOW */
+
+.buy-now-btn{
+    display:inline-block;
+    background:#ff6600;
+    color:white;
+    padding:14px 35px;
+    margin:20px 0;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+}
+
+.buy-now-btn:hover{
+    opacity:.9;
 }
 
 /* OFFERS */
@@ -262,6 +303,59 @@ section{
     margin-bottom:18px;
 }
 
+/* PAYMENT */
+
+.payment-section{
+    background:white;
+    text-align:center;
+}
+
+.payment-section p{
+    margin:12px 0;
+}
+
+.upi-qr{
+    width:250px;
+    max-width:90%;
+    margin:20px auto;
+    display:block;
+    border-radius:10px;
+}
+
+/* FORM */
+
+.order-form{
+    max-width:450px;
+    margin:25px auto;
+}
+
+.order-form input,
+.order-form textarea{
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:15px;
+}
+
+.order-form textarea{
+    min-height:100px;
+    resize:vertical;
+}
+
+.order-form button{
+    width:100%;
+    padding:14px;
+    background:#25D366;
+    color:white;
+    border:0;
+    border-radius:8px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
 /* CONTACT */
 
 .contact{
@@ -305,8 +399,12 @@ footer{
         gap:12px;
     }
 
+    nav{
+        text-align:center;
+    }
+
     nav a{
-        margin:0 6px;
+        margin:0 5px;
         font-size:13px;
     }
 
@@ -339,38 +437,7 @@ footer{
     }
 
 }
-.price-box {
-    margin: 20px auto;
-    padding: 15px;
-    max-width: 350px;
-    background: #f5f5f5;
-    border-radius: 10px;
-    font-size: 18px;
-}
 
-.price-box p {
-    margin: 10px 0;
-}
-
-.price-box strong {
-    font-size: 20px;
-}
-
-.buy-now-btn {
-    display: inline-block;
-    background: #ff6600;
-    color: white;
-    padding: 14px 35px;
-    margin: 20px 0;
-    border-radius: 8px;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-}
-
-.buy-now-btn:hover {
-    opacity: 0.9;
-}
 </style>
 </head>
 
@@ -436,40 +503,6 @@ footer{
         </a>
 
     </div>
-      <!-- OPPO OFFER-->
-    <section id="oppo" class="oppo-section">
-
-    <h2 class="title">📱 OPPO A6s</h2>
-
-    <div class="oppo-images">
-        <img src="oppo-a6s-offer.jpg" alt="OPPO A6s Offer">
-        <img src="oppo-a6s-offer-2.jpg" alt="OPPO A6s Offer">
-    </div>
-
-    <h3>🎁 మొబైల్ కొంటే సైకిల్ ఉచితం</h3>
-
-    <div class="price-box">
-        <p>📱 <b>4GB + 128GB</b> — <strong>₹24,999</strong></p>
-        <p>📱 <b>6GB + 128GB</b> — <strong>₹27,999</strong></p>
-    </div>
-
-    <p>మరిన్ని వివరాలు కోసం వీడియో చూడండి</p>
-
-    <a
-        class="instagram-btn"
-        href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
-        target="_blank">
-        🎥 Instagram Reel చూడండి
-    </a>
-
-    <br>
-
-    <a href="#payment" class="buy-now-btn">
-        🛒 BUY NOW
-    </a>
-
-    </section>
-
 
 </section>
 
@@ -533,6 +566,20 @@ footer{
             🎁 మొబైల్ కొంటే సైకిల్ ఉచితం 🚲
         </p>
 
+        <div class="price-box">
+
+            <p>
+                📱 <b>4GB + 128GB</b> —
+                <strong>₹24,999</strong>
+            </p>
+
+            <p>
+                📱 <b>6GB + 128GB</b> —
+                <strong>₹27,999</strong>
+            </p>
+
+        </div>
+
         <p class="oppo-details">
             మరిన్ని వివరాలు కోసం వీడియో చూడండి
         </p>
@@ -543,6 +590,15 @@ footer{
             target="_blank"
         >
             🎥 Instagram Reel చూడండి
+        </a>
+
+        <br>
+
+        <a
+            href="#payment"
+            class="buy-now-btn"
+        >
+            🛒 BUY NOW
         </a>
 
     </div>
@@ -560,8 +616,7 @@ footer{
 
     <div class="offer-grid">
 
-
-        <!-- OPPO OFFER -->
+        <!-- OPPO -->
 
         <div class="offer-card oppo-offer-card">
 
@@ -666,9 +721,105 @@ footer{
 </section>
 
 
+<!-- PAYMENT -->
+
+<section
+    id="payment"
+    class="payment-section"
+>
+
+    <h2 class="title">
+        💳 UPI Payment
+    </h2>
+
+    <p>
+        QR Code Scan చేసి Payment చేయండి
+    </p>
+
+    <img
+        src="upi-qr.jpg"
+        alt="UPI QR Code"
+        class="upi-qr"
+    >
+
+    <p>
+        <b>
+            Payment చేసిన తర్వాత WhatsAppలో Order details పంపండి.
+        </b>
+    </p>
+
+
+    <!-- ORDER FORM -->
+
+    <form
+        class="order-form"
+        onsubmit="sendOrder(event)"
+    >
+
+        <input
+            id="customerName"
+            type="text"
+            placeholder="మీ పేరు"
+            required
+        >
+
+        <input
+            id="customerPhone"
+            type="tel"
+            placeholder="మీ మొబైల్ నంబర్"
+            required
+        >
+
+        <input
+            id="mobileModel"
+            type="text"
+            placeholder="ఏ Mobile కావాలి?"
+            required
+        >
+
+        <textarea
+            id="address"
+            placeholder="మీ Address"
+            required
+        ></textarea>
+
+        <input
+            id="paymentAmount"
+            type="number"
+            placeholder="Payment చేసిన Amount ₹"
+            required
+        >
+
+        <button type="submit">
+            💬 Payment & Order Details పంపండి
+        </button>
+
+    </form>
+
+    <a
+        href="https://wa.me/919014060606"
+        target="_blank"
+        style="
+        display:inline-block;
+        padding:12px 20px;
+        background:#25D366;
+        color:white;
+        text-decoration:none;
+        border-radius:8px;
+        "
+    >
+        💬 WhatsApp Order
+    </a>
+
+</section>
+
+
 <!-- CONTACT -->
 
-<section class="contact" id="contact">
+<section
+    class="contact"
+    id="contact"
+>
 
     <h2 class="title">
         📍 Visit Our Store
@@ -707,88 +858,61 @@ footer{
     All Rights Reserved
 
 </footer>
-    <section id="payment" style="text-align:center; padding:40px 20px;">
-    <h2>💳 UPI Payment</h2>
 
-    <p>QR Code Scan చేసి Payment చేయండి</p>
 
-    <img src="upi-qr.jpg"
-         alt="UPI QR Code"
-         style="width:250px; max-width:90%; margin:20px auto; display:block;">
+<!-- JAVASCRIPT -->
 
-    <p><b>Payment చేసిన తర్వాత WhatsAppలో Order details పంపండి.</b></p>
-        <form onsubmit="sendOrder(event)" style="max-width:450px; margin:20px auto;">
+<script>
 
-    <input id="customerName"
-           type="text"
-           placeholder="మీ పేరు"
-           required
-           style="width:100%; padding:12px; margin:8px 0;">
+function sendOrder(event){
 
-    <input id="customerPhone"
-           type="tel"
-           placeholder="మీ మొబైల్ నంబర్"
-           required
-           style="width:100%; padding:12px; margin:8px 0;">
-
-    <input id="mobileModel"
-           type="text"
-           placeholder="ఏ Mobile కావాలి?"
-           required
-           style="width:100%; padding:12px; margin:8px 0;">
-
-    <textarea id="address"
-              placeholder="మీ Address"
-              required
-              style="width:100%; padding:12px; margin:8px 0;"></textarea>
-
-    <input id="paymentAmount"
-           type="number"
-           placeholder="Payment చేసిన Amount ₹"
-           required
-           style="width:100%; padding:12px; margin:8px 0;">
-
-    <button type="submit"
-            style="width:100%; padding:14px; background:#25D366; color:white; border:0; border-radius:8px; font-size:16px;">
-        💬 Payment & Order Details పంపండి
-    </button>
-
-        </form>
-        
-
-    <a href="https://wa.me/919014060606"
-       style="display:inline-block; padding:12px 20px; background:#25D366; color:white; text-decoration:none; border-radius:8px;">
-        💬 WhatsApp Order
-    </a>
-    </section>
-    <script>
-function sendOrder(event) {
     event.preventDefault();
 
-    const name = document.getElementById("customerName").value;
-    const phone = document.getElementById("customerPhone").value;
-    const model = document.getElementById("mobileModel").value;
-    const address = document.getElementById("address").value;
-    const amount = document.getElementById("paymentAmount").value;
+    const name =
+        document.getElementById("customerName").value;
+
+    const phone =
+        document.getElementById("customerPhone").value;
+
+    const model =
+        document.getElementById("mobileModel").value;
+
+    const address =
+        document.getElementById("address").value;
+
+    const amount =
+        document.getElementById("paymentAmount").value;
+
 
     const message =
 `🛒 NEW ORDER - SURENDRA MOBILES
 
 👤 Name: ${name}
+
 📞 Customer Phone: ${phone}
+
 📱 Mobile: ${model}
+
 📍 Address: ${address}
+
 💰 Payment Amount: ₹${amount}
 
 ✅ UPI Payment చేసినట్లు customer తెలిపాడు.`;
+
 
     const whatsappURL =
         "https://wa.me/919014060606?text=" +
         encodeURIComponent(message);
 
-    window.open(whatsappURL, "_blank");
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
 }
-    </script>
+
+</script>
 
 </body>
 </html>
