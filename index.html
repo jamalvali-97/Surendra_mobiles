@@ -1,886 +1,1035 @@
 <!DOCTYPE html>
 <html lang="te">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Surendra Mobiles | Exclusive Offers</title>
+<title>Surendra Mobiles</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<style>
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f5;
-            color: #222;
-        }
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
 
-        /* HEADER */
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    color:#222;
+}
 
-        header {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 25px 15px;
-        }
+/* HEADER */
 
-        header h1 {
-            font-size: 32px;
-            margin-bottom: 8px;
-        }
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px 15px;
+}
 
-        header p {
-            color: #ddd;
-            font-size: 16px;
-        }
+header h1{
+    font-size:32px;
+    margin-bottom:8px;
+}
 
-        /* OFFER SECTION */
+header p{
+    color:#ddd;
+}
 
-        .offer-section {
-            max-width: 1000px;
-            margin: 30px auto;
-            padding: 20px;
-            text-align: center;
-        }
+/* OFFER */
 
-        .offer-section h2 {
-            font-size: 30px;
-            margin-bottom: 25px;
-        }
+.offer-section{
+    max-width:1000px;
+    margin:30px auto;
+    padding:20px;
+    text-align:center;
+}
 
-        .offer-card {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
-        }
+.offer-section h2{
+    font-size:30px;
+    margin-bottom:25px;
+}
 
-        .offer-images {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
+.offer-card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+}
 
-        .offer-images img {
-            width: 100%;
-            max-height: 500px;
-            object-fit: contain;
-            border-radius: 12px;
-        }
+.offer-images{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:15px;
+}
 
-        .offer-card h3 {
-            font-size: 28px;
-            margin: 15px 0;
-        }
+.offer-images img{
+    width:100%;
+    max-height:500px;
+    object-fit:contain;
+    border-radius:12px;
+}
 
-        .free-cycle {
-            font-size: 25px;
-            font-weight: bold;
-            margin: 15px 0;
-        }
+.offer-card h3{
+    font-size:28px;
+    margin:20px 0;
+}
 
-        .price-box {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
+.price-box{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
 
-        .price {
-            background: #f1f1f1;
-            padding: 15px 25px;
-            border-radius: 10px;
-            font-size: 18px;
-        }
+.price{
+    background:#f1f1f1;
+    padding:15px 25px;
+    border-radius:10px;
+    font-size:18px;
+}
 
-        /* BUTTONS */
+.free-cycle{
+    font-size:24px;
+    font-weight:bold;
+    margin:20px 0;
+}
 
-        .video-btn,
-        .buy-btn,
-        .whatsapp-btn,
-        .continue-btn,
-        .paid-btn,
-        .order-whatsapp-btn {
-            display: inline-block;
-            border: none;
-            color: white;
-            text-decoration: none;
-            padding: 14px 25px;
-            border-radius: 8px;
-            font-weight: bold;
-            cursor: pointer;
-            margin: 8px;
-        }
+.video-btn,
+.buy-btn,
+.whatsapp-btn,
+.continue-btn,
+.back-btn,
+.paid-btn,
+.order-whatsapp-btn{
+    display:inline-block;
+    border:none;
+    text-decoration:none;
+    color:white;
+    padding:14px 25px;
+    border-radius:8px;
+    font-weight:bold;
+    cursor:pointer;
+    margin:8px;
+}
 
-        .video-btn {
-            background: #e1306c;
-        }
+.video-btn{
+    background:#e1306c;
+}
 
-        .buy-btn {
-            background: #008000;
-            font-size: 19px;
-            padding: 15px 40px;
-        }
+.buy-btn{
+    background:#008000;
+    font-size:19px;
+    padding:15px 40px;
+}
 
-        .continue-btn {
-            background: #0066cc;
-            width: 100%;
-            margin: 10px 0;
-        }
+.whatsapp-btn,
+.order-whatsapp-btn{
+    background:#25D366;
+}
 
-        .paid-btn {
-            background: #008000;
-            width: 100%;
-            margin: 10px 0;
-        }
+/* CONTACT */
 
-        .order-whatsapp-btn {
-            background: #25D366;
-        }
+.contact{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px 15px;
+    margin-top:30px;
+}
 
-        /* CONTACT */
+.contact p{
+    margin:8px 0;
+}
 
-        .contact {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 30px 15px;
-            margin-top: 30px;
-        }
+/* POPUP */
 
-        .whatsapp-btn {
-            background: #25D366;
-        }
+.popup{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.75);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+    padding:15px;
+}
 
-        /* POPUP */
+.popup-box{
+    background:white;
+    width:100%;
+    max-width:470px;
+    max-height:92vh;
+    overflow-y:auto;
+    border-radius:15px;
+    padding:25px;
+    position:relative;
+}
 
-        .popup {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.75);
-            justify-content: center;
-            align-items: center;
-            padding: 15px;
-        }
+.close-btn{
+    position:absolute;
+    right:15px;
+    top:10px;
+    border:none;
+    background:none;
+    font-size:25px;
+    cursor:pointer;
+}
 
-        .popup-box {
-            background: white;
-            width: 100%;
-            max-width: 470px;
-            max-height: 92vh;
-            overflow-y: auto;
-            border-radius: 15px;
-            padding: 25px;
-            position: relative;
-        }
+.popup-box h2{
+    text-align:center;
+    margin-bottom:20px;
+}
 
-        .popup-box h2 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
+/* FORM */
 
-        .close-btn {
-            position: absolute;
-            right: 15px;
-            top: 10px;
-            border: none;
-            background: none;
-            font-size: 25px;
-            cursor: pointer;
-        }
+.form-group{
+    margin-bottom:14px;
+}
 
-        /* FORM */
+.form-group label{
+    display:block;
+    font-weight:bold;
+    margin-bottom:6px;
+}
 
-        .form-group {
-            margin-bottom: 14px;
-        }
+.form-group input,
+.form-group select,
+.form-group textarea{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:7px;
+    font-size:16px;
+}
 
-        .form-group label {
-            display: block;
-            font-weight: bold;
-            margin-bottom: 6px;
-        }
+.form-group textarea{
+    height:80px;
+    resize:vertical;
+}
 
-        .form-group input,
-        .form-group select,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 7px;
-            font-size: 16px;
-        }
+.continue-btn{
+    background:#0066cc;
+    width:100%;
+    margin:10px 0;
+}
 
-        .form-group textarea {
-            height: 80px;
-            resize: vertical;
-        }
+/* PAYMENT */
 
-        /* PAYMENT */
+#paymentScreen,
+#successScreen{
+    display:none;
+    text-align:center;
+}
 
-        .payment-screen {
-            display: none;
-            text-align: center;
-        }
+.summary{
+    background:#f1f1f1;
+    padding:15px;
+    border-radius:10px;
+    line-height:1.8;
+    margin-bottom:15px;
+}
 
-        .payment-summary {
-            background: #f1f1f1;
-            padding: 15px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-            line-height: 1.8;
-        }
+.qr{
+    width:250px;
+    max-width:100%;
+    display:block;
+    margin:15px auto;
+}
 
-        .qr {
-            width: 250px;
-            max-width: 100%;
-            display: block;
-            margin: 15px auto;
-        }
+.payment-note{
+    background:#fff3cd;
+    padding:12px;
+    border-radius:8px;
+    margin:12px 0;
+}
 
-        .payment-note {
-            background: #fff3cd;
-            padding: 12px;
-            border-radius: 8px;
-            margin: 12px 0;
-        }
+.paid-btn{
+    background:#008000;
+    width:100%;
+    margin:10px 0;
+}
 
-        /* SUCCESS */
+.back-btn{
+    background:#777;
+}
 
-        .success-screen {
-            display: none;
-            text-align: center;
-        }
+.success-icon{
+    font-size:60px;
+    margin:10px 0;
+}
 
-        .success-icon {
-            font-size: 60px;
-            margin: 10px 0;
-        }
+.success-title{
+    color:#008000;
+    margin-bottom:15px;
+}
 
-        .success-screen h2 {
-            color: #008000;
-        }
+.order-summary{
+    background:#f1f1f1;
+    padding:15px;
+    border-radius:10px;
+    text-align:left;
+    line-height:1.8;
+    margin:15px 0;
+}
 
-        .order-summary {
-            background: #f1f1f1;
-            padding: 15px;
-            border-radius: 10px;
-            text-align: left;
-            line-height: 1.8;
-            margin: 15px 0;
-        }
+@media(max-width:700px){
 
-        @media (max-width: 700px) {
+    header h1{
+        font-size:27px;
+    }
 
-            header h1 {
-                font-size: 27px;
-            }
+    .offer-section h2{
+        font-size:25px;
+    }
 
-            .offer-section h2 {
-                font-size: 25px;
-            }
+    .offer-images{
+        grid-template-columns:1fr;
+    }
 
-            .offer-images {
-                grid-template-columns: 1fr;
-            }
+    .offer-card h3{
+        font-size:24px;
+    }
 
-            .offer-card h3 {
-                font-size: 24px;
-            }
+    .free-cycle{
+        font-size:21px;
+    }
+}
 
-            .free-cycle {
-                font-size: 21px;
-            }
-        }
-    </style>
+</style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
+<!-- HEADER -->
 
-    <header>
-        <h1>📱 Surendra Mobiles</h1>
-        <p>Four Road Circle, Allagadda</p>
-    </header>
+<header>
 
+    <h1>📱 Surendra Mobiles</h1>
 
-    <!-- EXCLUSIVE OFFERS -->
+    <p>Four Road Circle, Allagadda</p>
 
-    <section class="offer-section">
-
-        <h2>🔥 Surendra Exclusive Offers</h2>
-
-        <div class="offer-card">
-
-            <div class="offer-images">
-
-                <img
-                    src="oppo-a6s-offer.jpg"
-                    alt="OPPO A6s Offer"
-                >
-
-                <img
-                    src="oppo-a6s-offer-2.jpg"
-                    alt="OPPO A6s Offer"
-                >
-
-            </div>
+</header>
 
 
-            <h3>📱 OPPO A6s</h3>
+<!-- EXCLUSIVE OFFERS -->
 
+<section class="offer-section">
 
-            <div class="price-box">
+    <h2>🔥 Surendra Exclusive Offers</h2>
 
-                <div class="price">
-                    📱 4GB + 128GB
-                    <br>
-                    <strong>₹24,999</strong>
-                </div>
+    <div class="offer-card">
 
-                <div class="price">
-                    📱 6GB + 128GB
-                    <br>
-                    <strong>₹27,999</strong>
-                </div>
+        <div class="offer-images">
 
-            </div>
-
-
-            <div class="free-cycle">
-                🎁 మొబైల్ కొంటే సైకిల్ ఉచితం
-            </div>
-
-
-            <p>మరిన్ని వివరాలు కోసం వీడియో చూడండి</p>
-
-
-            <a
-                class="video-btn"
-                href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
-                target="_blank"
+            <img
+                src="oppo-a6s-offer.jpg"
+                alt="OPPO A6s Offer"
             >
-                ▶️ OFFER VIDEO
-            </a>
 
-
-            <br>
-<button class="buy-btn" type="button" onclick="openOrder()">
-    🛒 BUY NOW
-</button>
+            <img
+                src="oppo-a6s-offer-2.jpg"
+                alt="OPPO A6s Offer"
+            >
 
         </div>
 
-    </section>
+
+        <h3>📱 OPPO A6s</h3>
 
 
-    <!-- CONTACT -->
+        <div class="price-box">
 
-    <section class="contact">
+            <div class="price">
 
-        <h2>📍 Surendra Mobiles & Electronics</h2>
+                📱 4GB + 128GB
 
-        <p>Four Road Circle, Allagadda</p>
+                <br>
 
-        <p>📞 9014060606</p>
+                <strong>₹24,999</strong>
+
+            </div>
+
+
+            <div class="price">
+
+                📱 6GB + 128GB
+
+                <br>
+
+                <strong>₹27,999</strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="free-cycle">
+
+            🎁 మొబైల్ కొంటే సైకిల్ ఉచితం
+
+        </div>
+
+
+        <p>
+
+            మరిన్ని వివరాలు కోసం వీడియో చూడండి
+
+        </p>
+
 
         <a
-            class="whatsapp-btn"
-            href="https://wa.me/919014060606"
+            class="video-btn"
+            href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
             target="_blank"
         >
-            💬 WhatsApp
+
+            ▶️ OFFER VIDEO
+
         </a>
 
-    </section>
+
+        <br>
 
 
-    <!-- ORDER POPUP -->
+        <!-- BUY NOW -->
 
-    <div
-        id="orderPopup"
-        class="popup"
-        onclick="closeOutside(event)"
-    >
-
-        <div
-            class="popup-box"
-            onclick="event.stopPropagation()"
+        <button
+            class="buy-btn"
+            type="button"
+            onclick="openOrder()"
         >
 
+            🛒 BUY NOW
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact">
+
+    <h2>📍 Surendra Mobiles & Electronics</h2>
+
+    <p>Four Road Circle, Allagadda</p>
+
+    <p>📞 9014060606</p>
+
+    <a
+        class="whatsapp-btn"
+        href="https://wa.me/919014060606"
+        target="_blank"
+    >
+
+        💬 WhatsApp
+
+    </a>
+
+</section>
+
+
+<!-- ORDER POPUP -->
+
+<div
+    id="orderPopup"
+    class="popup"
+>
+
+    <div class="popup-box">
+
+
+        <!-- CLOSE -->
+
+        <button
+            class="close-btn"
+            type="button"
+            onclick="closePopup()"
+        >
+
+            ✕
+
+        </button>
+
+
+        <!-- STEP 1 -->
+
+        <div id="detailsScreen">
+
+            <h2>🛒 Order Details</h2>
+
+
+            <div class="form-group">
+
+                <label>👤 Name</label>
+
+                <input
+                    id="customerName"
+                    type="text"
+                    placeholder="మీ పేరు"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>📞 Phone Number</label>
+
+                <input
+                    id="customerPhone"
+                    type="tel"
+                    maxlength="10"
+                    placeholder="10 digit mobile number"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>📱 Select Product</label>
+
+                <select
+                    id="product"
+                    onchange="updateTotal()"
+                >
+
+                    <option
+                        value="OPPO A6s - 4GB + 128GB"
+                        data-price="24999"
+                    >
+
+                        OPPO A6s - 4GB + 128GB — ₹24,999
+
+                    </option>
+
+
+                    <option
+                        value="OPPO A6s - 6GB + 128GB"
+                        data-price="27999"
+                    >
+
+                        OPPO A6s - 6GB + 128GB — ₹27,999
+
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>🔢 Quantity</label>
+
+                <input
+                    id="quantity"
+                    type="number"
+                    min="1"
+                    value="1"
+                    onchange="updateTotal()"
+                >
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>📍 Address</label>
+
+                <textarea
+                    id="address"
+                    placeholder="మీ పూర్తి Address"
+                ></textarea>
+
+            </div>
+
+
+            <div class="summary">
+
+                💰 Total Amount:
+
+                <strong id="totalAmount">
+
+                    ₹24,999
+
+                </strong>
+
+            </div>
+
+
             <button
-                class="close-btn"
+                class="continue-btn"
                 type="button"
-                onclick="closePopup()"
+                onclick="continueToPayment()"
             >
-                ✕
+
+                Continue to Payment →
+
+            </button>
+
+        </div>
+
+
+        <!-- STEP 2 -->
+
+        <div id="paymentScreen">
+
+            <h2>💳 Payment</h2>
+
+
+            <div class="summary">
+
+                📱 Product:
+
+                <strong id="payProduct"></strong>
+
+                <br>
+
+                🔢 Quantity:
+
+                <strong id="payQuantity"></strong>
+
+                <br>
+
+                💰 Amount:
+
+                <strong id="payAmount"></strong>
+
+            </div>
+
+
+            <p>
+
+                <strong>
+                    QR Code Scan చేసి Payment చేయండి
+                </strong>
+
+            </p>
+
+
+            <img
+                src="upi-qr.jpg"
+                alt="UPI QR Code"
+                class="qr"
+            >
+
+
+            <div class="payment-note">
+
+                ⚠️ Payment చేసిన తర్వాత
+                <strong>I Have Paid</strong>
+                button నొక్కండి.
+
+            </div>
+
+
+            <button
+                class="paid-btn"
+                type="button"
+                onclick="confirmOrder()"
+            >
+
+                ✅ I Have Paid
+
             </button>
 
 
-            <!-- STEP 1 : CUSTOMER DETAILS -->
-
-            <div id="detailsScreen">
-
-                <h2>🛒 Order Details</h2>
-
-
-                <div class="form-group">
-
-                    <label>👤 Name</label>
-
-                    <input
-                        id="customerName"
-                        type="text"
-                        placeholder="మీ పేరు"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>📞 Phone Number</label>
-
-                    <input
-                        id="customerPhone"
-                        type="tel"
-                        maxlength="10"
-                        placeholder="10 digit mobile number"
-                        required
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>📱 Select Product</label>
-
-                    <select id="product" onchange="updateAmount()">
-
-                        <option value="OPPO A6s - 4GB + 128GB" data-price="24999">
-                            OPPO A6s - 4GB + 128GB — ₹24,999
-                        </option>
-
-                        <option value="OPPO A6s - 6GB + 128GB" data-price="27999">
-                            OPPO A6s - 6GB + 128GB — ₹27,999
-                        </option>
-
-                    </select>
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>🔢 Quantity</label>
-
-                    <input
-                        id="quantity"
-                        type="number"
-                        min="1"
-                        value="1"
-                        onchange="updateAmount()"
-                    >
-
-                </div>
-
-
-                <div class="form-group">
-
-                    <label>📍 Address</label>
-
-                    <textarea
-                        id="address"
-                        placeholder="మీ పూర్తి Address"
-                        required
-                    ></textarea>
-
-                </div>
-
-
-                <div class="payment-summary">
-
-                    💰 Total Amount:
-                    <strong id="totalAmount">₹24,999</strong>
-
-                </div>
-
-
-                <button
-                    class="continue-btn"
-                    type="button"
-                    onclick="continueToPayment()"
-                >
-                    Continue to Payment →
-                </button>
-
-            </div>
-
-
-            <!-- STEP 2 : PAYMENT -->
-
-            <div
-                id="paymentScreen"
-                class="payment-screen"
+            <button
+                class="back-btn"
+                type="button"
+                onclick="backToDetails()"
             >
 
-                <h2>💳 Payment</h2>
+                ← Back
+
+            </button>
+
+        </div>
 
 
-                <div class="payment-summary">
+        <!-- STEP 3 -->
 
-                    <div>
-                        📱 <strong id="payProduct"></strong>
-                    </div>
+        <div id="successScreen">
 
-                    <div>
-                        🔢 Quantity:
-                        <strong id="payQuantity"></strong>
-                    </div>
+            <div class="success-icon">
 
-                    <div>
-                        💰 Amount:
-                        <strong id="payAmount"></strong>
-                    </div>
-
-                </div>
-
-
-                <p>
-                    <strong>UPI QR Code Scan చేసి Payment చేయండి</strong>
-                </p>
-
-
-                <img
-                    src="upi-qr.jpg"
-                    alt="UPI QR Code"
-                    class="qr"
-                >
-
-
-                <div class="payment-note">
-
-                    ⚠️ Payment చేసిన తర్వాత మాత్రమే
-                    <strong>I Have Paid</strong> button నొక్కండి.
-
-                </div>
-
-
-                <button
-                    class="paid-btn"
-                    type="button"
-                    onclick="confirmOrder()"
-                >
-                    ✅ I Have Paid
-                </button>
-
-
-                <button
-                    type="button"
-                    onclick="backToDetails()"
-                    style="
-                        width:100%;
-                        padding:10px;
-                        border:1px solid #ccc;
-                        background:white;
-                        border-radius:7px;
-                        cursor:pointer;
-                    "
-                >
-                    ← Back
-                </button>
+                ✅
 
             </div>
 
 
-            <!-- STEP 3 : SUCCESS -->
+            <h2 class="success-title">
 
-            <div
-                id="successScreen"
-                class="success-screen"
+                Order Confirmed!
+
+            </h2>
+
+
+            <p>
+
+                🙏 Thank You for shopping with
+                <strong>Surendra Mobiles</strong>
+
+            </p>
+
+
+            <div class="order-summary">
+
+                🆔 Order ID:
+                <strong id="orderId"></strong>
+
+                <br>
+
+                👤 Name:
+                <span id="confirmName"></span>
+
+                <br>
+
+                📞 Phone:
+                <span id="confirmPhone"></span>
+
+                <br>
+
+                📱 Product:
+                <span id="confirmProduct"></span>
+
+                <br>
+
+                🔢 Quantity:
+                <span id="confirmQuantity"></span>
+
+                <br>
+
+                💰 Amount:
+                <strong id="confirmAmount"></strong>
+
+                <br>
+
+                📍 Address:
+                <span id="confirmAddress"></span>
+
+            </div>
+
+
+            <p>
+
+                Our team will contact you shortly.
+
+            </p>
+
+
+            <a
+                id="whatsappOrder"
+                class="order-whatsapp-btn"
+                target="_blank"
             >
 
-                <div class="success-icon">
-                    ✅
-                </div>
+                💬 Send Order on WhatsApp
 
-
-                <h2>Order Confirmed!</h2>
-
-
-                <p style="margin-top:10px;">
-                    🙏 Thank You for shopping with
-                    <strong>Surendra Mobiles</strong>
-                </p>
-
-
-                <div class="order-summary">
-
-                    <div>
-                        🆔 Order ID:
-                        <strong id="orderId"></strong>
-                    </div>
-
-                    <div>
-                        👤 Name:
-                        <span id="confirmName"></span>
-                    </div>
-
-                    <div>
-                        📞 Phone:
-                        <span id="confirmPhone"></span>
-                    </div>
-
-                    <div>
-                        📱 Product:
-                        <span id="confirmProduct"></span>
-                    </div>
-
-                    <div>
-                        🔢 Quantity:
-                        <span id="confirmQuantity"></span>
-                    </div>
-
-                    <div>
-                        💰 Amount:
-                        <strong id="confirmAmount"></strong>
-                    </div>
-
-                    <div>
-                        📍 Address:
-                        <span id="confirmAddress"></span>
-                    </div>
-
-                </div>
-
-
-                <p>
-                    Our team will contact you shortly.
-                </p>
-
-
-                <a
-                    id="whatsappOrder"
-                    class="order-whatsapp-btn"
-                    target="_blank"
-                >
-                    💬 Send Order on WhatsApp
-                </a>
-
-            </div>
+            </a>
 
         </div>
 
     </div>
 
+</div>
 
-    <!-- JAVASCRIPT -->
 
-    <script>
+<!-- JAVASCRIPT -->
 
-        let orderData = {};
+<script>
 
+let orderData = {};
 
-        function openOrder() {
 
-            document.getElementById("orderPopup").style.display = "flex";
+/* OPEN ORDER POPUP */
 
-            document.getElementById("detailsScreen").style.display = "block";
+function openOrder(){
 
-            document.getElementById("paymentScreen").style.display = "none";
+    document.getElementById("orderPopup").style.display = "flex";
 
-            document.getElementById("successScreen").style.display = "none";
+    document.getElementById("detailsScreen").style.display = "block";
 
-        }
+    document.getElementById("paymentScreen").style.display = "none";
 
+    document.getElementById("successScreen").style.display = "none";
 
-        function closePopup() {
+}
 
-            document.getElementById("orderPopup").style.display = "none";
 
-        }
+/* CLOSE POPUP */
 
+function closePopup(){
 
-        function closeOutside(event) {
+    document.getElementById("orderPopup").style.display = "none";
 
-            if (event.target.id === "orderPopup") {
+}
 
-                closePopup();
 
-            }
+/* UPDATE TOTAL */
 
-        }
+function updateTotal(){
 
+    const product =
+        document.getElementById("product");
 
-        function updateAmount() {
+    const price =
+        Number(
+            product.options[
+                product.selectedIndex
+            ].dataset.price
+        );
 
-            const product =
-                document.getElementById("product");
+    const quantity =
+        Number(
+            document.getElementById("quantity").value
+        );
 
-            const price =
-                Number(
-                    product.options[
-                        product.selectedIndex
-                    ].dataset.price
-                );
+    const total =
+        price * quantity;
 
-            const quantity =
-                Number(
-                    document.getElementById("quantity").value
-                );
 
-            const total =
-                price * quantity;
+    document.getElementById("totalAmount").textContent =
+        "₹" + total.toLocaleString("en-IN");
 
-            document.getElementById("totalAmount").textContent =
-                "₹" + total.toLocaleString("en-IN");
+}
 
-        }
 
+/* CONTINUE TO PAYMENT */
 
-        function continueToPayment() {
+function continueToPayment(){
 
-            const name =
-                document.getElementById("customerName").value.trim();
+    const name =
+        document.getElementById("customerName").value.trim();
 
-            const phone =
-                document.getElementById("customerPhone").value.trim();
+    const phone =
+        document.getElementById("customerPhone").value.trim();
 
-            const address =
-                document.getElementById("address").value.trim();
+    const address =
+        document.getElementById("address").value.trim();
 
-            const productElement =
-                document.getElementById("product");
+    const productElement =
+        document.getElementById("product");
 
-            const product =
-                productElement.value;
+    const product =
+        productElement.value;
 
-            const price =
-                Number(
-                    productElement.options[
-                        productElement.selectedIndex
-                    ].dataset.price
-                );
+    const price =
+        Number(
+            productElement.options[
+                productElement.selectedIndex
+            ].dataset.price
+        );
 
-            const quantity =
-                Number(
-                    document.getElementById("quantity").value
-                );
+    const quantity =
+        Number(
+            document.getElementById("quantity").value
+        );
 
 
-            if (!name) {
+    if(name === ""){
 
-                alert("దయచేసి మీ Name enter చేయండి.");
+        alert("దయచేసి మీ Name enter చేయండి.");
 
-                return;
+        return;
 
-            }
+    }
 
 
-            if (!/^[0-9]{10}$/.test(phone)) {
+    if(!/^[0-9]{10}$/.test(phone)){
 
-                alert("దయచేసి valid 10 digit Phone Number enter చేయండి.");
+        alert("దయచేసి valid 10 digit Phone Number enter చేయండి.");
 
-                return;
+        return;
 
-            }
+    }
 
 
-            if (!address) {
+    if(address === ""){
 
-                alert("దయచేసి మీ Address enter చేయండి.");
+        alert("దయచేసి మీ Address enter చేయండి.");
 
-                return;
+        return;
 
-            }
+    }
 
 
-            if (quantity < 1) {
+    if(quantity < 1){
 
-                alert("Quantity కనీసం 1 ఉండాలి.");
+        alert("Quantity కనీసం 1 ఉండాలి.");
 
-                return;
+        return;
 
-            }
+    }
 
 
-            const total =
-                price * quantity;
+    const total =
+        price * quantity;
 
 
-            orderData = {
+    orderData = {
 
-                name: name,
+        name:name,
 
-                phone: phone,
+        phone:phone,
 
-                product: product,
+        product:product,
 
-                quantity: quantity,
+        quantity:quantity,
 
-                address: address,
+        address:address,
 
-                total: total
+        total:total
 
-            };
+    };
 
 
-            document.getElementById("payProduct").textContent =
-                product;
+    document.getElementById("payProduct").textContent =
+        product;
 
-            document.getElementById("payQuantity").textContent =
-                quantity;
+    document.getElementById("payQuantity").textContent =
+        quantity;
 
-            document.getElementById("payAmount").textContent =
-                "₹" + total.toLocaleString("en-IN");
+    document.getElementById("payAmount").textContent =
+        "₹" + total.toLocaleString("en-IN");
 
 
-            document.getElementById("detailsScreen").style.display =
-                "none";
+    document.getElementById("detailsScreen").style.display =
+        "none";
 
-            document.getElementById("paymentScreen").style.display =
-                "block";
+    document.getElementById("paymentScreen").style.display =
+        "block";
 
-        }
+}
 
 
-        function backToDetails() {
+/* BACK */
 
-            document.getElementById("paymentScreen").style.display =
-                "none";
+function backToDetails(){
 
-            document.getElementById("detailsScreen").style.display =
-                "block";
+    document.getElementById("paymentScreen").style.display =
+        "none";
 
-        }
+    document.getElementById("detailsScreen").style.display =
+        "block";
 
+}
 
-        function generateOrderId() {
 
-            const date =
-                new Date();
+/* ORDER ID */
 
-            const year =
-                date.getFullYear();
+function generateOrderId(){
 
-            const month =
-                String(date.getMonth() + 1).padStart(2, "0");
+    const date =
+        new Date();
 
-            const day =
-                String(date.getDate()).padStart(2, "0");
+    const year =
+        date.getFullYear();
 
-            const
+    const month =
+        String(date.getMonth()+1).padStart(2,"0");
+
+    const day =
+        String(date.getDate()).padStart(2,"0");
+
+    const random =
+        Math.floor(
+            1000 + Math.random() * 9000
+        );
+
+
+    return "SM-" +
+        year +
+        month +
+        day +
+        "-" +
+        random;
+
+}
+
+
+/* CONFIRM ORDER */
+
+function confirmOrder(){
+
+    const id =
+        generateOrderId();
+
+
+    document.getElementById("orderId").textContent =
+        id;
+
+    document.getElementById("confirmName").textContent =
+        orderData.name;
+
+    document.getElementById("confirmPhone").textContent =
+        orderData.phone;
+
+    document.getElementById("confirmProduct").textContent =
+        orderData.product;
+
+    document.getElementById("confirmQuantity").textContent =
+        orderData.quantity;
+
+    document.getElementById("confirmAmount").textContent =
+        "₹" +
+        orderData.total.toLocaleString("en-IN");
+
+    document.getElementById("confirmAddress").textContent =
+        orderData.address;
+
+
+    const message =
+
+`🛒 NEW ORDER - SURENDRA MOBILES
+
+🆔 Order ID: ${id}
+
+👤 Name: ${orderData.name}
+
+📞 Customer Phone: ${orderData.phone}
+
+📱 Product: ${orderData.product}
+
+🔢 Quantity: ${orderData.quantity}
+
+💰 Amount: ₹${orderData.total.toLocaleString("en-IN")}
+
+📍 Address: ${orderData.address}
+
+✅ Customer says UPI payment completed.
+
+Please verify payment in UPI/Bank app.`;
+
+
+    const whatsappURL =
+
+        "https://wa.me/919014060606?text=" +
+
+        encodeURIComponent(message);
+
+
+    document.getElementById("whatsappOrder").href =
+        whatsappURL;
+
+
+    document.getElementById("paymentScreen").style.display =
+        "none";
+
+    document.getElementById("successScreen").style.display =
+        "block";
+
+}
+
+</script>
+
+</body>
+</html>
