@@ -20,8 +20,6 @@ body{
     color:#222;
 }
 
-/* HEADER */
-
 header{
     background:#111;
     color:white;
@@ -37,8 +35,6 @@ header h1{
 header p{
     color:#ddd;
 }
-
-/* OFFER */
 
 .offer-section{
     max-width:1000px;
@@ -131,8 +127,6 @@ header p{
     background:#25D366;
 }
 
-/* CONTACT */
-
 .contact{
     background:#111;
     color:white;
@@ -144,8 +138,6 @@ header p{
 .contact p{
     margin:8px 0;
 }
-
-/* POPUP */
 
 .popup{
     display:none;
@@ -184,8 +176,6 @@ header p{
     margin-bottom:20px;
 }
 
-/* FORM */
-
 .form-group{
     margin-bottom:14px;
 }
@@ -216,8 +206,6 @@ header p{
     width:100%;
     margin:10px 0;
 }
-
-/* PAYMENT */
 
 #paymentScreen,
 #successScreen{
@@ -297,14 +285,13 @@ header p{
     .free-cycle{
         font-size:21px;
     }
+
 }
 
 </style>
 </head>
 
 <body>
-
-<!-- HEADER -->
 
 <header>
 
@@ -315,13 +302,13 @@ header p{
 </header>
 
 
-<!-- EXCLUSIVE OFFERS -->
-
 <section class="offer-section">
 
     <h2>🔥 Surendra Exclusive Offers</h2>
 
     <div class="offer-card">
+
+        <!-- 2 JPG PHOTOS -->
 
         <div class="offer-images">
 
@@ -375,9 +362,7 @@ header p{
 
 
         <p>
-
             మరిన్ని వివరాలు కోసం వీడియో చూడండి
-
         </p>
 
 
@@ -395,8 +380,6 @@ header p{
         <br>
 
 
-        <!-- BUY NOW -->
-
         <button
             class="buy-btn"
             type="button"
@@ -411,8 +394,6 @@ header p{
 
 </section>
 
-
-<!-- CONTACT -->
 
 <section class="contact">
 
@@ -435,8 +416,6 @@ header p{
 </section>
 
 
-<!-- ORDER POPUP -->
-
 <div
     id="orderPopup"
     class="popup"
@@ -444,8 +423,6 @@ header p{
 
     <div class="popup-box">
 
-
-        <!-- CLOSE -->
 
         <button
             class="close-btn"
@@ -457,8 +434,6 @@ header p{
 
         </button>
 
-
-        <!-- STEP 1 -->
 
         <div id="detailsScreen">
 
@@ -578,8 +553,6 @@ header p{
         </div>
 
 
-        <!-- STEP 2 -->
-
         <div id="paymentScreen">
 
             <h2>💳 Payment</h2>
@@ -655,21 +628,15 @@ header p{
         </div>
 
 
-        <!-- STEP 3 -->
-
         <div id="successScreen">
 
             <div class="success-icon">
-
                 ✅
-
             </div>
 
 
             <h2 class="success-title">
-
                 Order Confirmed!
-
             </h2>
 
 
@@ -720,9 +687,7 @@ header p{
 
 
             <p>
-
                 Our team will contact you shortly.
-
             </p>
 
 
@@ -743,14 +708,12 @@ header p{
 </div>
 
 
-<!-- JAVASCRIPT -->
-
 <script>
 
 let orderData = {};
 
 
-/* OPEN ORDER POPUP */
+/* OPEN ORDER */
 
 function openOrder(){
 
@@ -765,7 +728,7 @@ function openOrder(){
 }
 
 
-/* CLOSE POPUP */
+/* CLOSE */
 
 function closePopup(){
 
@@ -774,7 +737,7 @@ function closePopup(){
 }
 
 
-/* UPDATE TOTAL */
+/* TOTAL */
 
 function updateTotal(){
 
@@ -796,14 +759,13 @@ function updateTotal(){
     const total =
         price * quantity;
 
-
     document.getElementById("totalAmount").textContent =
         "₹" + total.toLocaleString("en-IN");
 
 }
 
 
-/* CONTINUE TO PAYMENT */
+/* PAYMENT */
 
 function continueToPayment(){
 
@@ -878,15 +840,10 @@ function continueToPayment(){
     orderData = {
 
         name:name,
-
         phone:phone,
-
         product:product,
-
         quantity:quantity,
-
         address:address,
-
         total:total
 
     };
@@ -956,7 +913,7 @@ function generateOrderId(){
 }
 
 
-/* CONFIRM ORDER */
+/* CONFIRM */
 
 function confirmOrder(){
 
