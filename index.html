@@ -1,742 +1,436 @@
 <!DOCTYPE html>
 <html lang="te">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Surendra Mobiles | Allagadda</title>
-
-<style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#f5f6fa;
-    color:#111;
-}
-
-/* HEADER */
-
-header{
-    background:#111827;
-    color:white;
-    padding:18px 6%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    position:sticky;
-    top:0;
-    z-index:100;
-}
-
-.logo{
-    font-size:25px;
-    font-weight:800;
-}
-
-.logo span{
-    color:#00e5ff;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:20px;
-    font-size:15px;
-}
-
-/* HOME */
-
-.hero{
-    min-height:560px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:45px 20px;
-    background:linear-gradient(135deg,#111827,#1e3a8a,#111827);
-    color:white;
-}
-
-.hero-content{
-    width:100%;
-    max-width:700px;
-}
-
-.home-images{
-    display:flex;
-    gap:15px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-bottom:20px;
-}
-
-.home-images img{
-    width:100%;
-    max-width:300px;
-    border-radius:18px;
-    display:block;
-}
-
-.offer{
-    display:inline-block;
-    background:#ff1744;
-    padding:13px 25px;
-    border-radius:30px;
-    font-size:20px;
-    font-weight:bold;
-    margin-bottom:18px;
-}
-
-.hero h1{
-    font-size:42px;
-    margin-bottom:12px;
-}
-
-.hero p{
-    font-size:19px;
-    margin-bottom:22px;
-}
-
-.btn{
-    display:inline-block;
-    background:#00e5ff;
-    color:#07111f;
-    padding:14px 28px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/* SECTIONS */
-
-section{
-    padding:55px 6%;
-}
-
-.title{
-    text-align:center;
-    font-size:32px;
-    margin-bottom:35px;
-}
-
-/* BRANDS */
-
-.brands{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
-    gap:18px;
-    max-width:1000px;
-    margin:auto;
-}
-
-.brand{
-    background:white;
-    padding:28px 15px;
-    border-radius:15px;
-    text-align:center;
-    font-size:19px;
-    font-weight:bold;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-/* OPPO */
-
-.oppo-section{
-    background:#ffffff;
-}
-
-.oppo-box{
-    max-width:850px;
-    margin:auto;
-    background:#f8f9ff;
-    padding:25px;
-    border-radius:22px;
-    text-align:center;
-    box-shadow:0 5px 25px rgba(0,0,0,.10);
-}
-
-.oppo-images{
-    display:flex;
-    gap:15px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-bottom:22px;
-}
-
-.oppo-images img{
-    width:100%;
-    max-width:350px;
-    border-radius:18px;
-}
-
-.oppo-box h3{
-    font-size:28px;
-    margin-bottom:12px;
-}
-
-.oppo-offer-text{
-    font-size:22px;
-    font-weight:bold;
-    color:#e60023;
-    margin-bottom:12px;
-}
-
-.oppo-details{
-    font-size:17px;
-    color:#555;
-    margin-bottom:20px;
-}
-
-/* PRICE */
-
-.price-box{
-    margin:20px auto;
-    padding:15px;
-    max-width:350px;
-    background:#f5f5f5;
-    border-radius:10px;
-    font-size:18px;
-}
-
-.price-box p{
-    margin:10px 0;
-}
-
-.price-box strong{
-    font-size:20px;
-}
-
-/* INSTAGRAM */
-
-.instagram-btn{
-    display:inline-block;
-    background:#E1306C;
-    color:white;
-    padding:13px 24px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/* BUY NOW */
-
-.buy-now-btn{
-    display:inline-block;
-    background:#ff6600;
-    color:white;
-    padding:14px 35px;
-    margin:20px 0;
-    border-radius:8px;
-    border:0;
-    font-size:20px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-.buy-now-btn:hover{
-    opacity:.9;
-}
-
-/* OFFERS */
-
-.offer-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    max-width:1100px;
-    margin:auto;
-}
-
-.offer-card{
-    background:white;
-    padding:30px 20px;
-    border-radius:18px;
-    text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-}
-
-.offer-card h3{
-    margin-bottom:10px;
-    font-size:21px;
-}
-
-.offer-card p{
-    color:#666;
-}
-
-.oppo-offer-card{
-    grid-column:1 / -1;
-}
-
-.offer-images{
-    display:flex;
-    gap:15px;
-    justify-content:center;
-    flex-wrap:wrap;
-    margin-bottom:20px;
-}
-
-.offer-images img{
-    width:100%;
-    max-width:350px;
-    border-radius:18px;
-}
-
-.free-cycle{
-    color:#e60023 !important;
-    font-size:20px;
-    font-weight:bold;
-    margin:10px 0;
-}
-
-.video-text{
-    margin-bottom:18px;
-}
-
-/* PAYMENT */
-
-.payment-section{
-    background:white;
-    text-align:center;
-}
-
-.payment-section p{
-    margin:12px 0;
-}
-
-.upi-qr{
-    width:250px;
-    max-width:90%;
-    margin:20px auto;
-    display:block;
-    border-radius:10px;
-}
-
-/* FORM */
-
-.order-form{
-    max-width:450px;
-    margin:25px auto;
-}
-
-.order-form input,
-.order-form textarea{
-    width:100%;
-    padding:12px;
-    margin:8px 0;
-    border:1px solid #ddd;
-    border-radius:8px;
-    font-size:15px;
-}
-
-.order-form textarea{
-    min-height:100px;
-    resize:vertical;
-}
-
-.order-form button{
-    width:100%;
-    padding:14px;
-    background:#25D366;
-    color:white;
-    border:0;
-    border-radius:8px;
-    font-size:16px;
-    font-weight:bold;
-    cursor:pointer;
-}
-
-/* PAYMENT POPUP */
-
-.payment-popup{
-    display:none;
-    position:fixed;
-    z-index:9999;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.75);
-    justify-content:center;
-    align-items:center;
-    padding:20px;
-}
-
-.payment-box{
-    background:white;
-    width:100%;
-    max-width:420px;
-    max-height:90vh;
-    overflow-y:auto;
-    padding:25px;
-    border-radius:18px;
-    text-align:center;
-    position:relative;
-}
-
-.payment-box h2{
-    margin-bottom:15px;
-}
-
-.payment-box h3{
-    margin-bottom:15px;
-}
-
-.payment-box p{
-    margin:10px 0;
-}
-
-.payment-qr{
-    width:240px;
-    max-width:90%;
-    display:block;
-    margin:20px auto;
-    border-radius:10px;
-}
-
-.close-btn{
-    position:absolute;
-    right:12px;
-    top:8px;
-    border:0;
-    background:none;
-    font-size:25px;
-    cursor:pointer;
-}
-
-.payment-order-btn{
-    display:inline-block;
-    margin-top:15px;
-    padding:13px 22px;
-    background:#25D366;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-}
-
-/* CONTACT */
-
-.contact{
-    background:#111827;
-    color:white;
-    text-align:center;
-}
-
-.contact p{
-    margin:12px 0;
-    font-size:17px;
-}
-
-.whatsapp{
-    display:inline-block;
-    margin-top:20px;
-    background:#25D366;
-    color:white;
-    padding:14px 28px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-/* FOOTER */
-
-footer{
-    background:#080c14;
-    color:#aaa;
-    text-align:center;
-    padding:20px;
-    font-size:14px;
-}
-
-/* MOBILE */
-
-@media(max-width:650px){
-
-    header{
-        flex-direction:column;
-        gap:12px;
-    }
-
-    nav{
-        text-align:center;
-    }
-
-    nav a{
-        margin:0 5px;
-        font-size:13px;
-    }
-
-    .hero h1{
-        font-size:34px;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
-
-    .offer{
-        font-size:17px;
-    }
-
-    section{
-        padding:40px 5%;
-    }
-
-    .oppo-box{
-        padding:18px;
-    }
-
-    .oppo-box h3{
-        font-size:24px;
-    }
-
-    .oppo-offer-text{
-        font-size:19px;
-    }
-
-}
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Surendra Mobiles | Exclusive Offers</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            color: #ddd;
+        }
+
+        .offer-section {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .offer-section h2 {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+
+        .offer-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+        }
+
+        .offer-images {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .offer-images img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            border-radius: 12px;
+        }
+
+        .offer-card h3 {
+            font-size: 28px;
+            margin: 15px 0;
+        }
+
+        .free-cycle {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .price-box {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .price {
+            background: #f1f1f1;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-size: 18px;
+        }
+
+        .video-btn {
+            display: inline-block;
+            background: #e1306c;
+            color: white;
+            text-decoration: none;
+            padding: 14px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin: 10px;
+        }
+
+        .buy-btn {
+            display: inline-block;
+            background: #008000;
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .contact {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+            margin-top: 30px;
+        }
+
+        .whatsapp-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* PAYMENT POPUP */
+
+        .popup {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.75);
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .popup-box {
+            background: white;
+            width: 100%;
+            max-width: 450px;
+            max-height: 90vh;
+            overflow-y: auto;
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            right: 15px;
+            top: 10px;
+            border: none;
+            background: none;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        .popup-box h2 {
+            margin-bottom: 15px;
+        }
+
+        .popup-box h3 {
+            margin-bottom: 10px;
+        }
+
+        .qr {
+            width: 250px;
+            max-width: 100%;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .order-btn {
+            display: inline-block;
+            background: #008000;
+            color: white;
+            text-decoration: none;
+            padding: 13px 25px;
+            border-radius: 8px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 700px) {
+
+            header h1 {
+                font-size: 27px;
+            }
+
+            .offer-section h2 {
+                font-size: 25px;
+            }
+
+            .offer-images {
+                grid-template-columns: 1fr;
+            }
+
+            .offer-card h3 {
+                font-size: 24px;
+            }
+
+            .free-cycle {
+                font-size: 21px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- HEADER -->
+    <!-- HEADER -->
 
-<header>
-
-    <div class="logo">
-        SURENDRA <span>MOBILES</span>
-    </div>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#brands">Brands</a>
-        <a href="#oppo">OPPO</a>
-        <a href="#offers">Offers</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-</header>
+    <header>
+        <h1>📱 Surendra Mobiles</h1>
+        <p>Phone Road Circle, Allagadda</p>
+    </header>
 
 
-<!-- HOME -->
+    <!-- EXCLUSIVE OFFERS -->
 
-<section class="hero" id="home">
+    <section class="offer-section">
 
-    <div class="hero-content">
+        <h2>🔥 Surendra Exclusive Offers</h2>
 
-        <div class="home-images">
+        <div class="offer-card">
 
-            <img
-                src="oppo-a6s-offer.jpg"
-                alt="OPPO A6s Offer"
-            >
+            <div class="offer-images">
 
-            <img
-                src="oppo-a6s-offer-2.jpg"
-                alt="OPPO A6s Offer"
-            >
+                <img src="oppo-a6s-offer.jpg"
+                     alt="OPPO A6s Offer">
 
-        </div>
+                <img src="oppo-a6s-offer-2.jpg"
+                     alt="OPPO A6s Offer">
 
-        <div class="offer">
-            🎁 మొబైల్ కొంటే సైకిల్ ఉచితం 🚲
-        </div>
-
-        <h1>
-            OPPO A6s
-        </h1>
-
-        <p>
-            🔥 Special Offer at Surendra Mobiles
-        </p>
-
-        <a
-            class="btn"
-            href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
-            target="_blank"
-        >
-            🎥 వీడియో చూడండి
-        </a>
-
-    </div>
-
-</section>
+            </div>
 
 
-<!-- BRANDS -->
-
-<section id="brands">
-
-    <h2 class="title">
-        📱 Mobile Brands
-    </h2>
-
-    <div class="brands">
-
-        <div class="brand">Samsung</div>
-        <div class="brand">Apple</div>
-        <div class="brand">Redmi</div>
-        <div class="brand">Realme</div>
-        <div class="brand">OPPO</div>
-        <div class="brand">Vivo</div>
-        <div class="brand">Nothing</div>
-        <div class="brand">OnePlus</div>
-        <div class="brand">Motorola</div>
-        <div class="brand">iQOO</div>
-        <div class="brand">POCO</div>
-
-    </div>
-
-</section>
+            <h3>📱 OPPO A6s</h3>
 
 
-<!-- OPPO SECTION -->
+            <div class="price-box">
 
-<section class="oppo-section" id="oppo">
+                <div class="price">
+                    📱 4GB + 128GB
+                    <br>
+                    <strong>₹24,999</strong>
+                </div>
 
-    <h2 class="title">
-        📱 OPPO Special Offer
-    </h2>
+                <div class="price">
+                    📱 6GB + 128GB
+                    <br>
+                    <strong>₹27,999</strong>
+                </div>
 
-    <div class="oppo-box">
+            </div>
 
-        <div class="oppo-images">
 
-            <img
-                src="oppo-a6s-offer.jpg"
-                alt="OPPO A6s Offer"
-            >
+            <div class="free-cycle">
+                🎁 మొబైల్ కొంటే సైకిల్ ఉచితం
+            </div>
 
-            <img
-                src="oppo-a6s-offer-2.jpg"
-                alt="OPPO A6s Offer"
-            >
-
-        </div>
-
-        <h3>
-            OPPO A6s
-        </h3>
-
-        <p class="oppo-offer-text">
-            🎁 మొబైల్ కొంటే సైకిల్ ఉచితం 🚲
-        </p>
-
-        <div class="price-box">
 
             <p>
-                📱 <b>4GB + 128GB</b> —
+                మరిన్ని వివరాలు కోసం వీడియో చూడండి
+            </p>
+
+
+            <a
+                class="video-btn"
+                href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
+                target="_blank"
+            >
+                ▶️ OFFER VIDEO
+            </a>
+
+
+            <br>
+
+
+            <button
+                class="buy-btn"
+                type="button"
+                onclick="openPayment()"
+            >
+                🛒 BUY NOW
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="contact">
+
+        <h2>📍 Surendra Mobiles & Electronics</h2>
+
+        <p>Phone Road Circle, Allagadda</p>
+
+        <p>📞 9014060606</p>
+
+        <a
+            class="whatsapp-btn"
+            href="https://wa.me/919014060606"
+            target="_blank"
+        >
+            💬 WhatsApp
+        </a>
+
+    </section>
+
+
+    <!-- PAYMENT POPUP -->
+
+    <div
+        id="paymentPopup"
+        class="popup"
+        onclick="closeOutside(event)"
+    >
+
+        <div
+            class="popup-box"
+            onclick="event.stopPropagation()"
+        >
+
+            <button
+                class="close-btn"
+                type="button"
+                onclick="closePayment()"
+            >
+                ✕
+            </button>
+
+
+            <h2>💳 Payment Details</h2>
+
+            <h3>📱 OPPO A6s</h3>
+
+
+            <p>
+                4GB + 128GB —
                 <strong>₹24,999</strong>
             </p>
 
             <p>
-                📱 <b>6GB + 128GB</b> —
+                6GB + 128GB —
                 <strong>₹27,999</strong>
             </p>
 
-        </div>
 
-        <p class="oppo-details">
-            మరిన్ని వివరాలు కోసం వీడియో చూడండి
-        </p>
+            <br>
 
-        <a
-            class="instagram-btn"
-            href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
-            target="_blank"
-        >
-            🎥 Instagram Reel చూడండి
-        </a>
-
-        <br>
-
-        <button
-            type="button"
-            class="buy-now-btn"
-            onclick="openPayment()"
-        >
-            🛒 BUY NOW
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- OFFERS -->
-
-<section id="offers">
-
-    <h2 class="title">
-        🔥 Special Offers
-    </h2>
-
-    <div class="offer-grid">
-
-        <div class="offer-card oppo-offer-card">
-
-            <div class="offer-images">
-
-                <img
-                    src="oppo-a6s-offer.jpg"
-                    alt="OPPO A6s Free Cycle Offer"
-                >
-
-                <img
-                    src="oppo-a6s-offer-2.jpg"
-                    alt="OPPO A6s Free Cycle Offer"
-                >
-
-            </div>
-
-            <h3>
-                📱 OPPO A6s
-            </h3>
-
-            <p class="free-cycle">
-                🎁 మొబైల్ కొంటే సైకిల్ ఉచితం 🚲
+            <p>
+                <strong>QR Code Scan చేసి Payment చేయండి</strong>
             </p>
 
-            <p class="video-text">
-                మరిన్ని వివరాలు కోసం వీడియో చూడండి
+
+            <img
+                src="upi-qr.jpg"
+                alt="UPI Payment QR Code"
+                class="qr"
+            >
+
+
+            <p>
+                Payment చేసిన తర్వాత Order Details పంపండి.
             </p>
+
 
             <a
-                class="instagram-btn"
-                href="https://www.instagram.com/reel/Ddkc9DdR4Fq/?stkn=MTJvbTJ1aDF3anl1Zg=="
+                class="order-btn"
+                href="https://wa.me/919014060606"
                 target="_blank"
             >
-                🎥 Instagram Reel చూడండి
+                💬 Order Details WhatsApp
             </a>
 
         </div>
 
-
-        <div class="offer-card">
-
-            <h3>
-                📱 Exchange Offer
-            </h3>
-
-            <p>
-                Bring your old mobile and get exciting discounts.
-            </p>
-
-        </div>
+    </div>
 
 
-        <div class="offer-card">
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function openPayment() {
+
+            document.getElementById("paymentPopup").style.display = "flex";
+
+        }
+
+
+        function closePayment() {
+
+            document.getElementById("paymentPopup").style.display = "none";
+
+        }
+
+
+        function closeOutside(event) {
+
+            if (event.target.id === "paymentPopup") {
+
+                closePayment();
+
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
