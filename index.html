@@ -238,9 +238,10 @@ section{
     padding:14px 35px;
     margin:20px 0;
     border-radius:8px;
-    text-decoration:none;
+    border:0;
     font-size:20px;
     font-weight:bold;
+    cursor:pointer;
 }
 
 .buy-now-btn:hover{
@@ -354,6 +355,75 @@ section{
     font-size:16px;
     font-weight:bold;
     cursor:pointer;
+}
+
+/* PAYMENT POPUP */
+
+.payment-popup{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.75);
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.payment-box{
+    background:white;
+    width:100%;
+    max-width:420px;
+    max-height:90vh;
+    overflow-y:auto;
+    padding:25px;
+    border-radius:18px;
+    text-align:center;
+    position:relative;
+}
+
+.payment-box h2{
+    margin-bottom:15px;
+}
+
+.payment-box h3{
+    margin-bottom:15px;
+}
+
+.payment-box p{
+    margin:10px 0;
+}
+
+.payment-qr{
+    width:240px;
+    max-width:90%;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+}
+
+.close-btn{
+    position:absolute;
+    right:12px;
+    top:8px;
+    border:0;
+    background:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
+.payment-order-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:13px 22px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
 
 /* CONTACT */
@@ -594,12 +664,13 @@ footer{
 
         <br>
 
-        <a
-            href="#payment"
+        <button
+            type="button"
             class="buy-now-btn"
+            onclick="openPayment()"
         >
             🛒 BUY NOW
-        </a>
+        </button>
 
     </div>
 
@@ -615,8 +686,6 @@ footer{
     </h2>
 
     <div class="offer-grid">
-
-        <!-- OPPO -->
 
         <div class="offer-card oppo-offer-card">
 
@@ -657,8 +726,6 @@ footer{
         </div>
 
 
-        <!-- EXCHANGE -->
-
         <div class="offer-card">
 
             <h3>
@@ -672,247 +739,4 @@ footer{
         </div>
 
 
-        <!-- CREDIT CARD -->
-
         <div class="offer-card">
-
-            <h3>
-                💳 Credit Card Offer
-            </h3>
-
-            <p>
-                Enjoy special discounts with eligible credit cards.
-            </p>
-
-        </div>
-
-
-        <!-- FREE GIFTS -->
-
-        <div class="offer-card">
-
-            <h3>
-                🎁 Free Gifts
-            </h3>
-
-            <p>
-                Exciting gifts available on selected mobiles.
-            </p>
-
-        </div>
-
-
-        <!-- FINANCE -->
-
-        <div class="offer-card">
-
-            <h3>
-                💰 Easy Finance
-            </h3>
-
-            <p>
-                Bajaj, TVS & HTB Finance available.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- PAYMENT -->
-
-<section
-    id="payment"
-    class="payment-section"
->
-
-    <h2 class="title">
-        💳 UPI Payment
-    </h2>
-
-    <p>
-        QR Code Scan చేసి Payment చేయండి
-    </p>
-
-    <img
-        src="upi-qr.jpg"
-        alt="UPI QR Code"
-        class="upi-qr"
-    >
-
-    <p>
-        <b>
-            Payment చేసిన తర్వాత WhatsAppలో Order details పంపండి.
-        </b>
-    </p>
-
-
-    <!-- ORDER FORM -->
-
-    <form
-        class="order-form"
-        onsubmit="sendOrder(event)"
-    >
-
-        <input
-            id="customerName"
-            type="text"
-            placeholder="మీ పేరు"
-            required
-        >
-
-        <input
-            id="customerPhone"
-            type="tel"
-            placeholder="మీ మొబైల్ నంబర్"
-            required
-        >
-
-        <input
-            id="mobileModel"
-            type="text"
-            placeholder="ఏ Mobile కావాలి?"
-            required
-        >
-
-        <textarea
-            id="address"
-            placeholder="మీ Address"
-            required
-        ></textarea>
-
-        <input
-            id="paymentAmount"
-            type="number"
-            placeholder="Payment చేసిన Amount ₹"
-            required
-        >
-
-        <button type="submit">
-            💬 Payment & Order Details పంపండి
-        </button>
-
-    </form>
-
-    <a
-        href="https://wa.me/919014060606"
-        target="_blank"
-        style="
-        display:inline-block;
-        padding:12px 20px;
-        background:#25D366;
-        color:white;
-        text-decoration:none;
-        border-radius:8px;
-        "
-    >
-        💬 WhatsApp Order
-    </a>
-
-</section>
-
-
-<!-- CONTACT -->
-
-<section
-    class="contact"
-    id="contact"
->
-
-    <h2 class="title">
-        📍 Visit Our Store
-    </h2>
-
-    <p>
-        <strong>
-            Surendra Mobiles & Electronics
-        </strong>
-    </p>
-
-    <p>
-        Phone Road Circle, Allagadda
-    </p>
-
-    <p>
-        📞 9014060606
-    </p>
-
-    <a
-        class="whatsapp"
-        href="https://wa.me/919014060606"
-        target="_blank"
-    >
-        💬 WhatsApp Us
-    </a>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    © 2026 Surendra Mobiles & Electronics |
-    All Rights Reserved
-
-</footer>
-
-
-<!-- JAVASCRIPT -->
-
-<script>
-
-function sendOrder(event){
-
-    event.preventDefault();
-
-    const name =
-        document.getElementById("customerName").value;
-
-    const phone =
-        document.getElementById("customerPhone").value;
-
-    const model =
-        document.getElementById("mobileModel").value;
-
-    const address =
-        document.getElementById("address").value;
-
-    const amount =
-        document.getElementById("paymentAmount").value;
-
-
-    const message =
-`🛒 NEW ORDER - SURENDRA MOBILES
-
-👤 Name: ${name}
-
-📞 Customer Phone: ${phone}
-
-📱 Mobile: ${model}
-
-📍 Address: ${address}
-
-💰 Payment Amount: ₹${amount}
-
-✅ UPI Payment చేసినట్లు customer తెలిపాడు.`;
-
-
-    const whatsappURL =
-        "https://wa.me/919014060606?text=" +
-        encodeURIComponent(message);
-
-
-    window.open(
-        whatsappURL,
-        "_blank"
-    );
-
-}
-
-</script>
-
-</body>
-</html>
