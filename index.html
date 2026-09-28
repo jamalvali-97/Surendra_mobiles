@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Surendra Mobiles | Allagadda</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f6fa;
+    color:#111;
+}
+
+/* HEADER */
+header{
+    background:#111827;
+    color:white;
+    padding:18px 6%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+.logo{
+    font-size:25px;
+    font-weight:800;
+}
+
+.logo span{
+    color:#00e5ff;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:15px;
+}
+
+/* HERO */
+.hero{
+    min-height:430px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:50px 20px;
+    background:linear-gradient(135deg,#111827,#1e3a8a,#111827);
+    color:white;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+    color:#00e5ff;
+}
+
+.hero p{
+    font-size:19px;
+    margin-bottom:25px;
+}
+
+.offer{
+    display:inline-block;
+    background:#ff1744;
+    padding:13px 25px;
+    border-radius:30px;
+    font-size:20px;
+    font-weight:bold;
+    margin-bottom:25px;
+}
+
+.btn{
+    display:inline-block;
+    background:#00e5ff;
+    color:#07111f;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* SECTIONS */
+section{
+    padding:55px 6%;
+}
+
+.title{
+    text-align:center;
+    font-size:32px;
+    margin-bottom:35px;
+}
+
+/* BRANDS */
+.brands{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(140px,1fr));
+    gap:18px;
+    max-width:1000px;
+    margin:auto;
+}
+
+.brand{
+    background:white;
+    padding:28px 15px;
+    border-radius:15px;
+    text-align:center;
+    font-size:19px;
+    font-weight:bold;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.brand:hover{
+    transform:translateY(-5px);
+    background:#111827;
+    color:white;
+}
+
+/* OFFERS */
+.offer-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.offer-card{
+    background:white;
+    padding:30px 20px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.offer-card h3{
+    margin-bottom:10px;
+    font-size:21px;
+}
+
+.offer-card p{
+    color:#666;
+}
+
+/* CONTACT */
+.contact{
+    background:#111827;
+    color:white;
+    text-align:center;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:17px;
+}
+
+.whatsapp{
+    display:inline-block;
+    margin-top:20px;
+    background:#25D366;
+    color:white;
+    padding:14px 28px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+/* FOOTER */
+footer{
+    background:#080c14;
+    color:#aaa;
+    text-align:center;
+    padding:20px;
+    font-size:14px;
+}
+
+/* MOBILE */
+@media(max-width:650px){
+    header{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    nav a{
+        margin:0 7px;
+        font-size:13px;
+    }
+
+    .hero h1{
+        font-size:36px;
+    }
+
+    .hero p{
+        font-size:16px;
+    }
+
+    section{
+        padding:40px 5%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SUR​​ENDRA <span>MOBILES</span></div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#brands">Brands</a>
+        <a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div>
+        <div class="offer">🔥 UP TO ₹15,000 DISCOUNT</div>
+
+        <h1>Surendra <span>Mobiles</span></h1>
+
+        <p>All Your Favourite Mobile Brands At One Place</p>
+
+        <a class="btn" href="#brands">Explore Brands</a>
+    </div>
+</section>
+
+<!-- BRANDS -->
+<section id="brands">
+
+    <h2 class="title">📱 Mobile Brands</h2>
+
+    <div class="brands">
+
+        <div class="brand">Samsung</div>
+        <div class="brand">Apple</div>
+        <div class="brand">Redmi</div>
+        <div class="brand">Realme</div>
+        <div class="brand">OPPO</div>
+        <div class="brand">Vivo</div>
+        <div class="brand">Nothing</div>
+        <div class="brand">OnePlus</div>
+        <div class="brand">Motorola</div>
+        <div class="brand">iQOO</div>
+        <div class="brand">POCO</div>
+
+    </div>
+
+</section>
+
+<!-- OFFERS -->
+<section id="offers">
+
+    <h2 class="title">🔥 Special Offers</h2>
+
+    <div class="offer-grid">
+
+        <div class="offer-card">
+            <h3>📱 Exchange Offer</h3>
+            <p>Bring your old mobile and get exciting discounts.</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>💳 Credit Card Offer</h3>
+            <p>Enjoy special discounts with eligible credit cards.</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>🎁 Free Gifts</h3>
+            <p>Exciting gifts available on selected mobiles.</p>
+        </div>
+
+        <div class="offer-card">
+            <h3>💰 Easy Finance</h3>
+            <p>Bajaj, TVS & HTB Finance available.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="title">📍 Visit Our Store</h2>
+
+    <p><strong>Surendra Mobiles & Electronics</strong></p>
+
+    <p>Phone Road Circle, Allagadda</p>
+
+    <p>📞 9014060606</p>
+
+    <a class="whatsapp"
+       href="https://wa.me/919014060606"
+       target="_blank">
+       💬 WhatsApp Us
+    </a>
+
+</section>
+
+<footer>
+    © 2026 Surendra Mobiles & Electronics | All Rights Reserved
+</footer>
+
+</body>
+</html>
