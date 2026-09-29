@@ -10,84 +10,362 @@
 html{scroll-behavior:smooth}
 body{font-family:Arial,sans-serif;background:#f5f6f8;color:#171717}
 button,a{font-family:inherit}
-header{background:linear-gradient(135deg,#111,#252525);color:#fff;text-align:center;padding:25px 15px}
+
+header{
+ background:linear-gradient(135deg,#111,#252525);
+ color:#fff;
+ text-align:center;
+ padding:25px 15px
+}
 header h1{font-size:32px;margin-bottom:7px}
 header p{color:#ddd}
 
 .container{max-width:1100px;margin:auto;padding:20px 15px}
-.section-title{text-align:center;font-size:29px;margin:25px 0 18px;font-weight:900}
+.section-title{
+ text-align:center;
+ font-size:29px;
+ margin:25px 0 18px;
+ font-weight:900
+}
 
+/* STORE SLIDER */
 .store-wrap{overflow:hidden;max-width:700px;margin:0 auto}
 .store-slider{display:flex;transition:transform .45s ease}
 .store-slide{min-width:100%;padding:5px}
-.store-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 7px 25px rgba(0,0,0,.13);text-align:center}
-.store-card img{width:100%;height:300px;object-fit:cover;display:block}
+.store-card{
+ background:#fff;
+ border-radius:20px;
+ overflow:hidden;
+ box-shadow:0 7px 25px rgba(0,0,0,.13);
+ text-align:center
+}
+.store-card img{
+ width:100%;
+ height:300px;
+ object-fit:cover;
+ display:block;
+ cursor:pointer
+}
 .store-info{padding:20px}
 .store-info h2{font-size:28px;font-weight:900;margin-bottom:12px}
 .store-info p{font-size:18px;margin:8px 0}
 .store-info a{color:#0066cc;text-decoration:none;font-weight:bold}
+
 .dots{text-align:center;margin:14px}
-.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#bbb;margin:0 5px}
+.dot{
+ display:inline-block;
+ width:10px;
+ height:10px;
+ border-radius:50%;
+ background:#bbb;
+ margin:0 5px;
+ cursor:pointer
+}
 .dot.active{background:#111}
 
-.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
-.category{border:none;border-radius:18px;padding:25px 10px;color:#fff;cursor:pointer;min-height:135px;font-size:20px;font-weight:900;box-shadow:0 7px 20px rgba(0,0,0,.14);transition:.2s}
+/* CATEGORIES */
+.categories{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:15px
+}
+.category{
+ border:none;
+ border-radius:18px;
+ padding:25px 10px;
+ color:#fff;
+ cursor:pointer;
+ min-height:135px;
+ font-size:20px;
+ font-weight:900;
+ box-shadow:0 7px 20px rgba(0,0,0,.14);
+ transition:.2s
+}
 .category:hover{transform:translateY(-4px)}
-.category span{display:block;font-size:42px;margin-bottom:10px}
+.category span{
+ display:block;
+ font-size:42px;
+ margin-bottom:10px
+}
 .cat1{background:linear-gradient(135deg,#111,#444)}
 .cat2{background:linear-gradient(135deg,#7b3f00,#d58b35)}
 .cat3{background:linear-gradient(135deg,#164e63,#219ebc)}
 .cat4{background:linear-gradient(135deg,#14532d,#22c55e)}
 
+/* PAGES */
 .page-section{display:none}
 .page-section.active{display:block}
-.back-home{background:#555;color:#fff;border:none;padding:11px 20px;border-radius:8px;font-weight:bold;cursor:pointer;margin-bottom:15px}
 
-.products{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.product-card{background:#fff;border-radius:18px;padding:18px;box-shadow:0 6px 22px rgba(0,0,0,.12);text-align:center}
-.product-name{font-size:30px;font-weight:1000;text-transform:uppercase;margin:5px 0 18px;letter-spacing:.5px}
-.product-images{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.product-images img{width:100%;height:270px;object-fit:cover;border-radius:12px;background:#eee}
-.product-price{font-size:26px;font-weight:900;margin:17px 0;color:#111}
-.product-extra{font-size:20px;font-weight:bold;margin:12px 0}
-.buy-btn,.video-btn,.whatsapp-btn{display:inline-block;border:none;text-decoration:none;color:#fff;padding:14px 25px;border-radius:9px;font-weight:bold;cursor:pointer;margin:6px}
+.back-home{
+ background:#555;
+ color:#fff;
+ border:none;
+ padding:11px 20px;
+ border-radius:8px;
+ font-weight:bold;
+ cursor:pointer;
+ margin-bottom:15px
+}
+
+/* PRODUCTS */
+.products{
+ display:grid;
+ grid-template-columns:repeat(2,1fr);
+ gap:20px
+}
+.product-card{
+ background:#fff;
+ border-radius:18px;
+ padding:18px;
+ box-shadow:0 6px 22px rgba(0,0,0,.12);
+ text-align:center
+}
+.product-name{
+ font-size:30px;
+ font-weight:1000;
+ text-transform:uppercase;
+ margin:5px 0 18px;
+ letter-spacing:.5px
+}
+.product-images{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:10px
+}
+.product-images img{
+ width:100%;
+ height:270px;
+ object-fit:cover;
+ border-radius:12px;
+ background:#eee;
+ cursor:pointer;
+ transition:.2s
+}
+.product-images img:hover{
+ transform:scale(1.02)
+}
+
+.product-price{
+ font-size:26px;
+ font-weight:900;
+ margin:17px 0;
+ color:#111
+}
+.product-extra{
+ font-size:20px;
+ font-weight:bold;
+ margin:12px 0
+}
+
+.buy-btn,.video-btn,.whatsapp-btn{
+ display:inline-block;
+ border:none;
+ text-decoration:none;
+ color:#fff;
+ padding:14px 25px;
+ border-radius:9px;
+ font-weight:bold;
+ cursor:pointer;
+ margin:6px
+}
 .buy-btn{background:#008000;font-size:18px}
 .video-btn{background:#e1306c}
 .whatsapp-btn{background:#25d366}
 
+/* MOBILE */
 .mobile-details{text-align:center;margin:14px 0}
-.mobile-price{background:#f1f1f1;padding:12px;border-radius:10px;margin:7px 0;font-size:18px}
-.contact{background:#111;color:#fff;text-align:center;padding:30px 15px;margin-top:30px}
+.mobile-price{
+ background:#f1f1f1;
+ padding:12px;
+ border-radius:10px;
+ margin:7px 0;
+ font-size:18px
+}
+
+/* CONTACT */
+.contact{
+ background:#111;
+ color:#fff;
+ text-align:center;
+ padding:30px 15px;
+ margin-top:30px
+}
 .contact p{margin:8px 0}
 
-.popup{display:none;position:fixed;inset:0;background:rgba(0,0,0,.75);justify-content:center;align-items:center;z-index:9999;padding:15px}
-.popup-box{background:#fff;width:100%;max-width:470px;max-height:92vh;overflow-y:auto;border-radius:15px;padding:25px;position:relative}
-.close-btn{position:absolute;right:15px;top:10px;border:none;background:none;font-size:25px;cursor:pointer}
-.popup-box h2{text-align:center;margin-bottom:20px}
-.form-group{margin-bottom:14px}
-.form-group label{display:block;font-weight:bold;margin-bottom:6px}
-.form-group input,.form-group textarea{width:100%;padding:12px;border:1px solid #ccc;border-radius:7px;font-size:16px}
-.form-group textarea{height:80px;resize:vertical}
-.summary{background:#f1f1f1;padding:15px;border-radius:10px;line-height:1.8;margin-bottom:15px}
-.continue-btn,.paid-btn{border:none;color:#fff;padding:14px;border-radius:8px;font-weight:bold;cursor:pointer;width:100%;margin:10px 0}
-.continue-btn{background:#0666cc}.paid-btn{background:#008000}
-.back-btn{background:#777;color:#fff;border:none;padding:12px 20px;border-radius:8px;cursor:pointer}
-#paymentScreen,#successScreen{display:none;text-align:center}
-.qr{width:250px;max-width:100%;display:block;margin:15px auto}
-.payment-note{background:#fff3cd;padding:12px;border-radius:8px;margin:12px 0}
-.order-summary{background:#f1f1f1;padding:15px;border-radius:10px;text-align:left;line-height:1.8;margin:15px 0}
-.success-icon{font-size:60px}.success-title{color:#008000;margin-bottom:15px}
-
-@media(max-width:750px){
- .categories{grid-template-columns:repeat(2,1fr)}
- .products{grid-template-columns:1fr}
- .product-images img{height:230px}
- .store-card img{height:240px}
+/* POPUP */
+.popup{
+ display:none;
+ position:fixed;
+ inset:0;
+ background:rgba(0,0,0,.75);
+ justify-content:center;
+ align-items:center;
+ z-index:9999;
+ padding:15px
 }
+.popup-box{
+ background:#fff;
+ width:100%;
+ max-width:470px;
+ max-height:92vh;
+ overflow-y:auto;
+ border-radius:15px;
+ padding:25px;
+ position:relative
+}
+.close-btn{
+ position:absolute;
+ right:15px;
+ top:10px;
+ border:none;
+ background:none;
+ font-size:25px;
+ cursor:pointer
+}
+.popup-box h2{text-align:center;margin-bottom:20px}
+
+.form-group{margin-bottom:14px}
+.form-group label{
+ display:block;
+ font-weight:bold;
+ margin-bottom:6px
+}
+.form-group input,.form-group textarea{
+ width:100%;
+ padding:12px;
+ border:1px solid #ccc;
+ border-radius:7px;
+ font-size:16px
+}
+.form-group textarea{
+ height:80px;
+ resize:vertical
+}
+
+.summary{
+ background:#f1f1f1;
+ padding:15px;
+ border-radius:10px;
+ line-height:1.8;
+ margin-bottom:15px
+}
+
+.continue-btn,.paid-btn{
+ border:none;
+ color:#fff;
+ padding:14px;
+ border-radius:8px;
+ font-weight:bold;
+ cursor:pointer;
+ width:100%;
+ margin:10px 0
+}
+.continue-btn{background:#0666cc}
+.paid-btn{background:#008000}
+
+.back-btn{
+ background:#777;
+ color:#fff;
+ border:none;
+ padding:12px 20px;
+ border-radius:8px;
+ cursor:pointer
+}
+
+#paymentScreen,#successScreen{
+ display:none;
+ text-align:center
+}
+
+.qr{
+ width:250px;
+ max-width:100%;
+ display:block;
+ margin:15px auto;
+ cursor:pointer
+}
+
+.payment-note{
+ background:#fff3cd;
+ padding:12px;
+ border-radius:8px;
+ margin:12px 0
+}
+
+.order-summary{
+ background:#f1f1f1;
+ padding:15px;
+ border-radius:10px;
+ text-align:left;
+ line-height:1.8;
+ margin:15px 0
+}
+
+.success-icon{font-size:60px}
+.success-title{color:#008000;margin-bottom:15px}
+
+/* FULL SCREEN IMAGE VIEWER */
+.image-viewer{
+ display:none;
+ position:fixed;
+ inset:0;
+ background:rgba(0,0,0,.96);
+ z-index:20000;
+ justify-content:center;
+ align-items:center;
+ padding:15px
+}
+
+.image-viewer img{
+ max-width:100%;
+ max-height:92vh;
+ width:auto;
+ height:auto;
+ object-fit:contain;
+ border-radius:8px;
+ cursor:default
+}
+
+.image-close{
+ position:absolute;
+ top:12px;
+ right:18px;
+ color:#fff;
+ font-size:38px;
+ font-weight:bold;
+ cursor:pointer;
+ z-index:20001;
+ line-height:1
+}
+
+/* MOBILE RESPONSIVE */
+@media(max-width:750px){
+ .categories{
+  grid-template-columns:repeat(2,1fr)
+ }
+ .products{
+  grid-template-columns:1fr
+ }
+ .product-images img{
+  height:230px
+ }
+ .store-card img{
+  height:240px
+ }
+}
+
 @media(max-width:450px){
- header h1{font-size:27px}.section-title{font-size:25px}
- .category{min-height:120px;font-size:17px}.category span{font-size:35px}
+ header h1{font-size:27px}
+ .section-title{font-size:25px}
+ .category{
+  min-height:120px;
+  font-size:17px
+ }
+ .category span{font-size:35px}
  .product-name{font-size:25px}
+ .buy-btn{
+  padding:13px 18px
+ }
 }
 </style>
 </head>
@@ -108,25 +386,31 @@ header p{color:#ddd}
 
 <div class="store-slide">
 <div class="store-card">
+
 <img src="images/surendra-mobiles.jpg" alt="Surendra Mobiles">
+
 <div class="store-info">
 <h2>Surendra Mobiles</h2>
 <p>📍 4 Road Circle, Allagadda</p>
 <p>📞 <a href="tel:9010140606">9010140606</a></p>
 <p>🕙 Call Timings: <strong>10:00 AM – 7:00 PM</strong></p>
 </div>
+
 </div>
 </div>
 
 <div class="store-slide">
 <div class="store-card">
+
 <img src="images/surendra-electronics.jpg" alt="Surendra Electronics">
+
 <div class="store-info">
 <h2>Surendra Electronics</h2>
 <p>📍 Kovelakunta Road, Allagadda</p>
 <p>📞 <a href="tel:9121970606">9121970606</a></p>
 <p>🕙 Call Timings: <strong>10:00 AM – 7:00 PM</strong></p>
 </div>
+
 </div>
 </div>
 
@@ -141,303 +425,172 @@ header p{color:#ddd}
 <h2 class="section-title">✨ Categories</h2>
 
 <div class="categories">
-<button class="category cat1" onclick="showCategory('mobiles')"><span>📱</span>Mobiles</button>
-<button class="category cat2" onclick="showCategory('furniture')"><span>🛋️</span>Furniture</button>
-<button class="category cat3" onclick="showCategory('dining')"><span>🍽️</span>Dining Tables</button>
-<button class="category cat4" onclick="showCategory('electronics')"><span>🔌</span>Electronics</button>
+
+<button class="category cat1" onclick="showCategory('mobiles')">
+<span>📱</span>
+Mobiles
+</button>
+
+<button class="category cat2" onclick="showCategory('furniture')">
+<span>🛋️</span>
+Furniture
+</button>
+
+<button class="category cat3" onclick="showCategory('dining')">
+<span>🍽️</span>
+Dining Tables
+</button>
+
+<button class="category cat4" onclick="showCategory('electronics')">
+<span>🔌</span>
+Electronics
+</button>
+
 </div>
+
+<!-- MOBILES -->
 
 <section id="mobiles" class="page-section">
+
 <h2 class="section-title">📱 Mobiles</h2>
+
 <button class="back-home" onclick="showHome()">← Home</button>
+
 <div class="products">
 
 <div class="product-card">
+
 <div class="product-name">OPPO A6s</div>
+
 <div class="product-images">
+
 <img src="images/oppo-a6s-offer.jpg" alt="OPPO A6s">
+
 <img src="images/oppo-a6s-offer-2.jpg" alt="OPPO A6s">
+
 </div>
+
 <div class="mobile-details">
-<div class="mobile-price">📱 4GB + 128GB — <strong>₹24,999</strong></div>
-<div class="mobile-price">📱 6GB + 128GB — <strong>₹27,999</strong></div>
+
+<div class="mobile-price">
+📱 4GB + 128GB — <strong>₹24,999</strong>
 </div>
-<div class="product-extra">🎁 మొబైల్ కొంటే సైకిల్ ఉచితం</div>
-<a class="video-btn" href="https://www.instagram.com/reel/Ddkc9DdR4Fq/" target="_blank" rel="noopener">▶️ OFFER VIDEO</a>
-<br>
-<button class="buy-btn" onclick="openOrder('OPPO A6s','24999')">🛒 BUY NOW</button>
+
+<div class="mobile-price">
+📱 6GB + 128GB — <strong>₹27,999</strong>
 </div>
 
 </div>
+
+<div class="product-extra">
+🎁 మొబైల్ కొంటే సైకిల్ ఉచితం
+</div>
+
+<a
+class="video-btn"
+href="https://www.instagram.com/reel/Ddkc9DdR4Fq/"
+target="_blank"
+rel="noopener">
+▶️ OFFER VIDEO
+</a>
+
+<br>
+
+<button
+class="buy-btn"
+onclick="openOrder('OPPO A6s - 4GB + 128GB','24999')">
+🛒 BUY NOW ₹24,999
+</button>
+
+<button
+class="buy-btn"
+onclick="openOrder('OPPO A6s - 6GB + 128GB','27999')">
+🛒 BUY NOW ₹27,999
+</button>
+
+</div>
+
+</div>
+
 </section>
 
+<!-- FURNITURE -->
+
 <section id="furniture" class="page-section">
+
 <h2 class="section-title">🛋️ Furniture</h2>
+
 <button class="back-home" onclick="showHome()">← Home</button>
+
 <div class="products">
 
 <div class="product-card">
+
 <div class="product-name">TEAK SOFA</div>
+
 <div class="product-images">
 <img src="images/teak-sofa-1.jpg" alt="Teak Sofa">
 <img src="images/teak-sofa-2.jpg" alt="Teak Sofa">
 </div>
+
 <div class="product-price">₹15,000</div>
-<button class="buy-btn" onclick="openOrder('Teak Sofa','15000')">🛒 BUY NOW</button>
+
+<button
+class="buy-btn"
+onclick="openOrder('Teak Sofa','15000')">
+🛒 BUY NOW
+</button>
+
 </div>
 
+
 <div class="product-card">
+
 <div class="product-name">LOUNGE SOFA</div>
+
 <div class="product-images">
 <img src="images/lounge-sofa-1.jpg" alt="Lounge Sofa">
 <img src="images/lounge-sofa-2.jpg" alt="Lounge Sofa">
 </div>
+
 <div class="product-price">₹50,000</div>
-<button class="buy-btn" onclick="openOrder('Lounge Sofa','50000')">🛒 BUY NOW</button>
+
+<button
+class="buy-btn"
+onclick="openOrder('Lounge Sofa','50000')">
+🛒 BUY NOW
+</button>
+
 </div>
 
+
 <div class="product-card">
+
 <div class="product-name">SPRING SOFA</div>
+
 <div class="product-images">
 <img src="images/spring-sofa-1.jpg" alt="Spring Sofa">
 <img src="images/spring-sofa-2.jpg" alt="Spring Sofa">
 </div>
+
 <div class="product-price">₹35,000</div>
-<button class="buy-btn" onclick="openOrder('Spring Sofa','35000')">🛒 BUY NOW</button>
+
+<button
+class="buy-btn"
+onclick="openOrder('Spring Sofa','35000')">
+🛒 BUY NOW
+</button>
+
 </div>
 
 </div>
+
 </section>
+
+<!-- DINING -->
 
 <section id="dining" class="page-section">
+
 <h2 class="section-title">🍽️ Dining Tables</h2>
-<button class="back-home" onclick="showHome()">← Home</button>
-<div class="products">
 
-<div class="product-card">
-<div class="product-name">GLASS DINING TABLE</div>
-<div class="product-images">
-<img src="images/glass-dining-table-1.jpg" alt="Glass Dining Table">
-<img src="images/glass-dining-table-2.jpg" alt="Glass Dining Table">
-</div>
-<div class="product-price">₹13,000</div>
-<button class="buy-btn" onclick="openOrder('Glass Dining Table','13000')">🛒 BUY NOW</button>
-</div>
-
-<div class="product-card">
-<div class="product-name">PREMIUM DINING TABLE</div>
-<div class="product-images">
-<img src="images/premium-dining-table-1.jpg" alt="Premium Dining Table">
-<img src="images/premium-dining-table-2.jpg" alt="Premium Dining Table">
-</div>
-<div class="product-price">₹48,000</div>
-<button class="buy-btn" onclick="openOrder('Premium Dining Table','48000')">🛒 BUY NOW</button>
-</div>
-
-</div>
-</section>
-
-<section id="electronics" class="page-section">
-<h2 class="section-title">🔌 Electronics</h2>
-<button class="back-home" onclick="showHome()">← Home</button>
-<div style="background:#fff;padding:30px;border-radius:18px;text-align:center;box-shadow:0 6px 20px rgba(0,0,0,.1)">
-<h2>Electronics Offers Coming Soon</h2>
-<p style="margin-top:10px">మీరు products/offers చెప్పిన తర్వాత ఇక్కడ add చేస్తాం.</p>
-</div>
-</section>
-
-</main>
-
-<section class="contact">
-<h2>📍 Surendra Mobiles & Electronics</h2>
-<p>Allagadda</p>
-<p>📞 9010140606 / 9121970606</p>
-<p>🕙 10:00 AM – 7:00 PM</p>
-</section>
-
-<div id="orderPopup" class="popup" onclick="popupOutsideClick(event)">
-<div class="popup-box">
-<button class="close-btn" onclick="closePopup()">✕</button>
-
-<div id="detailsScreen">
-<h2>🛒 Order Details</h2>
-
-<div class="form-group">
-<label>👤 Name</label>
-<input id="customerName" type="text" placeholder="మీ పేరు">
-</div>
-
-<div class="form-group">
-<label>📞 Phone Number</label>
-<input id="customerPhone" type="tel" inputmode="numeric" maxlength="10" placeholder="10 digit mobile number">
-</div>
-
-<div class="form-group">
-<label>📦 Product</label>
-<input id="selectedProduct" type="text" readonly>
-</div>
-
-<div class="form-group">
-<label>🔢 Quantity</label>
-<input id="quantity" type="number" min="1" step="1" value="1" oninput="updateTotal()">
-</div>
-
-<div class="form-group">
-<label>📍 Address</label>
-<textarea id="address" placeholder="మీ పూర్తి Address"></textarea>
-</div>
-
-<div class="summary">💰 Total Amount: <strong id="totalAmount">₹0</strong></div>
-
-<button class="continue-btn" onclick="continueToPayment()">Continue to Payment →</button>
-</div>
-
-<div id="paymentScreen">
-<h2>💳 Payment</h2>
-<div class="summary">
-📦 Product: <strong id="payProduct"></strong><br>
-🔢 Quantity: <strong id="payQuantity"></strong><br>
-💰 Amount: <strong id="payAmount"></strong>
-</div>
-<p><strong>QR Code Scan చేసి Payment చేయండి</strong></p>
-<img src="images/upi-qr.jpg" alt="UPI QR Code" class="qr">
-<div class="payment-note">⚠️ Payment చేసిన తర్వాత <strong>I Have Paid</strong> button నొక్కండి.</div>
-<button class="paid-btn" onclick="confirmOrder()">✅ I Have Paid</button>
-<button class="back-btn" onclick="backToDetails()">← Back</button>
-</div>
-
-<div id="successScreen">
-<div class="success-icon">✅</div>
-<h2 class="success-title">Order Received!</h2>
-<p>🙏 Thank You for shopping with <strong>Surendra Mobiles</strong></p>
-
-<div class="order-summary">
-🆔 Order ID: <strong id="orderId"></strong><br>
-👤 Name: <span id="confirmName"></span><br>
-📞 Phone: <span id="confirmPhone"></span><br>
-📦 Product: <span id="confirmProduct"></span><br>
-🔢 Quantity: <span id="confirmQuantity"></span><br>
-💰 Amount: <strong id="confirmAmount"></strong><br>
-📍 Address: <span id="confirmAddress"></span>
-</div>
-
-<div class="payment-note">
-⏳ మీ Payment verify చేసిన తర్వాత Order confirm చేస్తాము.<br>
- మీ screenshot మాకు WhatsApp లో పంపండి.<br>
-క్రింది button తో WhatsApp లో Order పంపండి.
-</div>
-
-<a id="whatsappOrder" class="whatsapp-btn" target="_blank" rel="noopener">💬 Send Order on WhatsApp</a>
-</div>
-
-</div>
-</div>
-
-<script>
-let orderData={};
-let currentSlide=0;
-let startX=0;
-
-function goSlide(n){
- currentSlide=n;
- document.getElementById("storeSlider").style.transform=`translateX(-${n*100}%)`;
- document.querySelectorAll(".dot").forEach((d,i)=>d.classList.toggle("active",i===n));
-}
-function showCategory(id){
- document.querySelectorAll(".page-section").forEach(s=>s.classList.remove("active"));
- document.getElementById(id).classList.add("active");
- window.scrollTo({top:0,behavior:"smooth"});
-}
-function showHome(){
- document.querySelectorAll(".page-section").forEach(s=>s.classList.remove("active"));
- window.scrollTo({top:0,behavior:"smooth"});
-}
-const slider=document.getElementById("storeSlider");
-slider.addEventListener("touchstart",e=>startX=e.touches[0].clientX);
-slider.addEventListener("touchend",e=>{
- const diff=startX-e.changedTouches[0].clientX;
- if(Math.abs(diff)>50) goSlide(diff>0?1:0);
-});
-
-function openOrder(product,price){
- document.getElementById("orderPopup").style.display="flex";
- document.body.style.overflow="hidden";
- document.getElementById("detailsScreen").style.display="block";
- document.getElementById("paymentScreen").style.display="none";
- document.getElementById("successScreen").style.display="none";
- document.getElementById("selectedProduct").value=product;
- document.getElementById("selectedProduct").dataset.price=price;
- document.getElementById("quantity").value=1;
- updateTotal();
-}
-function updateTotal(){
- const price=Number(document.getElementById("selectedProduct").dataset.price||0);
- const q=Math.max(1,Math.floor(Number(document.getElementById("quantity").value)||1));
- document.getElementById("quantity").value=q;
- document.getElementById("totalAmount").textContent="₹"+(price*q).toLocaleString("en-IN");
-}
-function continueToPayment(){
- const name=document.getElementById("customerName").value.trim();
- const phone=document.getElementById("customerPhone").value.trim();
- const address=document.getElementById("address").value.trim();
- if(!name){alert("దయచేసి మీ Name enter చేయండి.");return}
- if(!/^[0-9]{10}$/.test(phone)){alert("దయచేసి valid 10 digit Phone Number enter చేయండి.");return}
- if(!address){alert("దయచేసి మీ Address enter చేయండి.");return}
- const product=document.getElementById("selectedProduct").value;
- const price=Number(document.getElementById("selectedProduct").dataset.price);
- const quantity=Math.max(1,Math.floor(Number(document.getElementById("quantity").value)||1));
- orderData={name,phone,product,quantity,address,total:price*quantity};
- document.getElementById("payProduct").textContent=product;
- document.getElementById("payQuantity").textContent=quantity;
- document.getElementById("payAmount").textContent="₹"+orderData.total.toLocaleString("en-IN");
- document.getElementById("detailsScreen").style.display="none";
- document.getElementById("paymentScreen").style.display="block";
-}
-function backToDetails(){
- document.getElementById("paymentScreen").style.display="none";
- document.getElementById("detailsScreen").style.display="block";
-}
-function generateOrderId(){
- const d=new Date();
- const pad=n=>String(n).padStart(2,"0");
- return `SM-${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}-${Math.floor(1000+Math.random()*9000)}`;
-}
-function confirmOrder(){
- const id=generateOrderId();
- document.getElementById("orderId").textContent=id;
- document.getElementById("confirmName").textContent=orderData.name;
- document.getElementById("confirmPhone").textContent=orderData.phone;
- document.getElementById("confirmProduct").textContent=orderData.product;
- document.getElementById("confirmQuantity").textContent=orderData.quantity;
- document.getElementById("confirmAmount").textContent="₹"+orderData.total.toLocaleString("en-IN");
- document.getElementById("confirmAddress").textContent=orderData.address;
- const message=`🛒 NEW ORDER - SURENDRA MOBILES
-
-🆔 Order ID: ${id}
-👤 Name: ${orderData.name}
-📞 Customer Phone: ${orderData.phone}
-📦 Product: ${orderData.product}
-🔢 Quantity: ${orderData.quantity}
-💰 Amount: ₹${orderData.total.toLocaleString("en-IN")}
-📍 Address: ${orderData.address}
-
-✅ Customer says UPI payment completed.
-Please verify payment in UPI/Bank app.`;
- document.getElementById("whatsappOrder").href="https://wa.me/919014060606?text="+encodeURIComponent(message);
- document.getElementById("paymentScreen").style.display="none";
- document.getElementById("successScreen").style.display="block";
-}
-function closePopup(){
- document.getElementById("orderPopup").style.display="none";
- document.body.style.overflow="";
-}
-function popupOutsideClick(e){
- if(e.target.id==="orderPopup") closePopup();
-}
-document.addEventListener("keydown",e=>{
- if(e.key==="Escape") closePopup();
-});
-</script>
-
-</body>
-</html>
+<button class="back-home"
